@@ -23,12 +23,15 @@ body {
 }
 
 .container {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
   margin: 0 auto;
   width: 920px;
   
-  @supports (display: grid) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+//  @supports (display: grid) {
+//    display: grid;
+//    grid-template-columns: 1fr 1fr;
+//  }
 }
