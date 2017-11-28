@@ -574,4 +574,32 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 4em;
+  margin-bottom: 2em;
+}
+
+/* line 99, ../scss/_page-styles.scss */
+.img-wrapper {
+  position: relative;
+  width: 6em;
+}
+
+/* line 104, ../scss/_page-styles.scss */
+.icons {
+  -webkit-filter: invert(87%);
+          filter: invert(87%);
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 113, ../scss/_page-styles.scss */
+.vertical-separate-line {
+  border: solid 1px #c6c6c6;
+  background-color: #c6c6c6;
+  height: 30px;
+  margin: 6px 0 0 0;
+  width: 0px;
 }

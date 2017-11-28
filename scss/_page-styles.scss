@@ -93,4 +93,28 @@ body {
   border-radius: 3px;
   display: flex;
   height: 4em;
+  margin-bottom: 2em;
 }
+
+.img-wrapper {
+  position: relative;
+  width: 6em;
+}
+
+.icons {
+  filter: invert(87%); //daje kolor $gray-light czyli #dedede
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vertical-separate-line {
+  border: solid 1px $gray-input-box;;
+  background-color: $gray-input-box;;
+  height: 30px;
+  margin: 6px 0 0 0;
+  width: 0px;
+}
+
