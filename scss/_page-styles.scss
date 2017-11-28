@@ -1,4 +1,5 @@
 html {
+  font-family: $main-font;
   font-size: 10px;
 }
 
@@ -23,12 +24,141 @@ body {
 }
 
 .container {
-  height: 100%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 120rem;
+  margin: 2.5rem auto 0;
   width: 920px;
   
-  @supports (display: grid) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+//  @supports (display: grid) {
+//    display: grid;
+//    grid-template-columns: 1fr 1fr;
+//  }
+}
+
+.register-form,
+.email-form,
+.sign-in-form, 
+.recover-form,
+.subscribe-form {
+  width: $form-width;
+}
+
+.register-form,
+.sign-in-form, 
+.recover-form {
+  margin-bottom: 4rem;
+}
+
+.register-form,
+.email-form {
+  margin-right: 8rem;
+}
+
+.title {
+  color: $white;
+  font-family: $title;
+  font-size: $title-size;
+  font-weight: $font-normal-weight;
+  margin: 0 0 1.5rem 0 ;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(43, 0, 0, 0.75)
+}
+
+.border-box {
+  background-color: rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  padding: 2em;
+}
+
+.form-box {
+  background-color: $white;
+  border-radius: 3px;
+  padding: 2em;
+}
+
+.labels {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.input-group, .input-group-select {
+  border: solid 1px $gray-input-box;
+  border-radius: 3px;
+  display: flex;
+  height: 4em;
+  margin-bottom: 2em;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 6em;
+}
+
+.icons {
+  filter: invert(87%); //daje kolor $gray-light czyli #dedede
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vertical-separate-line {
+  border: solid 1px $gray-separate-line;
+  background-color: $gray-separate-line;
+  height: 30px;
+  margin: 6px 0 0 0;
+  width: 0px;
+}
+
+.form-input {
+  border: none;
+  font-family: $main-font;
+  font-size: $font-size-base;
+  padding-left: 2em;
+  width: 78%;
+}
+
+.form-input::placeholder {
+  color: $gray;
+  font-family: $main-font;
+  font-size: $font-size-base;
+}
+
+.select-location {
+  border: none;
+  color: $gray;
+  font-family: $main-font;
+  font-size: $font-size-base;
+  padding-left: 2em;
+  width: 88%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.input-group-select {
+  position: relative;
+}
+
+.input-group-select::after {
+  border-top: solid 8px $gray-light;
+  border-bottom: solid 8px transparent;
+  border-left: solid 8px transparent;
+  border-right: solid 8px transparent;
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(calc(-50% + 4px));
+  width: 0px;
 }

@@ -456,7 +456,7 @@ template {
 }
 
 @font-face {
-  font-family: "TitilliumText22L_light", sans-serif;
+  font-family: "TitilliumText22L_light";
   src: url("../fonts/TitilliumText22L_light.otf") format("opentype");
 }
 @font-face {
@@ -465,16 +465,17 @@ template {
 }
 /* line 1, ../scss/_page-styles.scss */
 html {
+  font-family: "TitilliumText22L_light";
   font-size: 10px;
 }
 
-/* line 5, ../scss/_page-styles.scss */
+/* line 6, ../scss/_page-styles.scss */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* line 10, ../scss/_page-styles.scss */
+/* line 11, ../scss/_page-styles.scss */
 .background {
   background-image: url("../img/bg.jpg");
   background-position: center center;
@@ -482,7 +483,7 @@ body {
   background-size: cover;
 }
 
-/* line 17, ../scss/_page-styles.scss */
+/* line 18, ../scss/_page-styles.scss */
 .logo {
   display: block;
   margin: 0 auto;
@@ -491,16 +492,180 @@ body {
   width: 429px;
 }
 
-/* line 25, ../scss/_page-styles.scss */
+/* line 26, ../scss/_page-styles.scss */
 .container {
-  height: 100%;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 120rem;
+  margin: 2.5rem auto 0;
   width: 920px;
 }
-@supports (display: grid) {
-  /* line 25, ../scss/_page-styles.scss */
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+
+/* line 40, ../scss/_page-styles.scss */
+.register-form,
+.email-form,
+.sign-in-form,
+.recover-form,
+.subscribe-form {
+  width: 42rem;
+}
+
+/* line 48, ../scss/_page-styles.scss */
+.register-form,
+.sign-in-form,
+.recover-form {
+  margin-bottom: 4rem;
+}
+
+/* line 54, ../scss/_page-styles.scss */
+.register-form,
+.email-form {
+  margin-right: 8rem;
+}
+
+/* line 59, ../scss/_page-styles.scss */
+.title {
+  color: #f4f4f4;
+  font-family: "TitilliumText22L_medium";
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(43, 0, 0, 0.75);
+}
+
+/* line 69, ../scss/_page-styles.scss */
+.border-box {
+  background-color: rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  padding: 2em;
+}
+
+/* line 75, ../scss/_page-styles.scss */
+.form-box {
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  padding: 2em;
+}
+
+/* line 81, ../scss/_page-styles.scss */
+.labels {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* line 92, ../scss/_page-styles.scss */
+.input-group, .input-group-select {
+  border: solid 1px #c6c6c6;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4em;
+  margin-bottom: 2em;
+}
+
+/* line 100, ../scss/_page-styles.scss */
+.img-wrapper {
+  position: relative;
+  width: 6em;
+}
+
+/* line 105, ../scss/_page-styles.scss */
+.icons {
+  -webkit-filter: invert(87%);
+          filter: invert(87%);
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 114, ../scss/_page-styles.scss */
+.vertical-separate-line {
+  border: solid 1px #e4e4e4;
+  background-color: #e4e4e4;
+  height: 30px;
+  margin: 6px 0 0 0;
+  width: 0px;
+}
+
+/* line 122, ../scss/_page-styles.scss */
+.form-input {
+  border: none;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.6rem;
+  padding-left: 2em;
+  width: 78%;
+}
+
+/* line 130, ../scss/_page-styles.scss */
+.form-input::-webkit-input-placeholder {
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.6rem;
+}
+.form-input:-ms-input-placeholder {
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.6rem;
+}
+.form-input::-ms-input-placeholder {
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.6rem;
+}
+.form-input::placeholder {
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.6rem;
+}
+
+/* line 136, ../scss/_page-styles.scss */
+.select-location {
+  border: none;
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.6rem;
+  padding-left: 2em;
+  width: 88%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* line 147, ../scss/_page-styles.scss */
+.input-group-select {
+  position: relative;
+}
+
+/* line 151, ../scss/_page-styles.scss */
+.input-group-select::after {
+  border-top: solid 8px #dedede;
+  border-bottom: solid 8px transparent;
+  border-left: solid 8px transparent;
+  border-right: solid 8px transparent;
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(calc(-50% + 4px));
+          transform: translateY(calc(-50% + 4px));
+  width: 0px;
 }

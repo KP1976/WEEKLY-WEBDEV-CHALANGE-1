@@ -1,9 +1,9 @@
 // FONTS
 
-$main-font: "TitilliumText22L_light", sans-serif;
+$main-font: "TitilliumText22L_light";
 $title: "TitilliumText22L_medium";
-$header-font: $title;
-
+$font-normal-weight: 400;
+$font-light-weight: 100;
 // COLORS
 
 $red: #f03747;
@@ -14,16 +14,18 @@ $green: #7ec31f;
 $green-light: #addc54;
 $green-dark: #3b9a00;
 
-$white: #fff;
+$white: #f4f4f4;
 
 $gray: #afafaf;
 $gray-light: #dedede;
-
-$text-primary: $white;
+$gray-input-box: #c6c6c6;
+$gray-separate-line: #e4e4e4;
 
 // TYPOGRAPHY
 
-$font-size-base: 1.4rem;
-$display1-size: 12vw;
-$lead-font-size: 2rem;
+$font-size-base: 1.6rem;
+$title-size: 3.2rem;
+
+// OBJECTS
+$form-width: 42rem;
 $btn-width: 8.75rem;
