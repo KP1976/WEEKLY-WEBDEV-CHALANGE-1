@@ -597,9 +597,17 @@ body {
 
 /* line 113, ../scss/_page-styles.scss */
 .vertical-separate-line {
-  border: solid 1px #c6c6c6;
-  background-color: #c6c6c6;
+  border: solid 1px #e4e4e4;
+  background-color: #e4e4e4;
   height: 30px;
   margin: 6px 0 0 0;
   width: 0px;
+}
+
+/* line 121, ../scss/_page-styles.scss */
+.form-input {
+  border: none;
+  font-family: "TitilliumText22L_light", sans-serif;
+  margin-left: 2em;
+  width: 100%;
 }

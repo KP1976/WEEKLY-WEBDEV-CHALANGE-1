@@ -111,10 +111,17 @@ body {
 }
 
 .vertical-separate-line {
-  border: solid 1px $gray-input-box;;
-  background-color: $gray-input-box;;
+  border: solid 1px $gray-separate-line;
+  background-color: $gray-separate-line;
   height: 30px;
   margin: 6px 0 0 0;
   width: 0px;
+}
+
+.form-input {
+  border: none;
+  font-family: $main-font;
+  margin-left: 2em;
+  width: 100%;
 }
 
