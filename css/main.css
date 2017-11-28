@@ -502,7 +502,76 @@ body {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100vh;
-  margin: 0 auto;
+  height: 120rem;
+  margin: 2.5rem auto 0;
   width: 920px;
+}
+
+/* line 39, ../scss/_page-styles.scss */
+.register-form,
+.email-form,
+.sign-in-form,
+.recover-form,
+.subscribe-form {
+  width: 42rem;
+}
+
+/* line 47, ../scss/_page-styles.scss */
+.register-form,
+.sign-in-form,
+.recover-form {
+  margin-bottom: 4rem;
+}
+
+/* line 53, ../scss/_page-styles.scss */
+.register-form,
+.email-form {
+  margin-right: 8rem;
+}
+
+/* line 58, ../scss/_page-styles.scss */
+.title {
+  color: #f4f4f4;
+  font-family: "TitilliumText22L_medium";
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgba(43, 0, 0, 0.75);
+}
+
+/* line 68, ../scss/_page-styles.scss */
+.border-box {
+  background-color: rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  padding: 2em;
+}
+
+/* line 74, ../scss/_page-styles.scss */
+.form-box {
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  padding: 2em;
+}
+
+/* line 80, ../scss/_page-styles.scss */
+.labels {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* line 91, ../scss/_page-styles.scss */
+.input-group {
+  border: solid 1px #c6c6c6;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4em;
 }
