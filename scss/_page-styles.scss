@@ -1,4 +1,5 @@
 html {
+  font-family: $main-font;
   font-size: 10px;
 }
 
@@ -88,7 +89,7 @@ body {
   border: 0;
 }
 
-.input-group {
+.input-group, .input-group-select {
   border: solid 1px $gray-input-box;
   border-radius: 3px;
   display: flex;
@@ -121,7 +122,43 @@ body {
 .form-input {
   border: none;
   font-family: $main-font;
-  margin-left: 2em;
-  width: 100%;
+  font-size: $font-size-base;
+  padding-left: 2em;
+  width: 78%;
 }
 
+.form-input::placeholder {
+  color: $gray;
+  font-family: $main-font;
+  font-size: $font-size-base;
+}
+
+.select-location {
+  border: none;
+  color: $gray;
+  font-family: $main-font;
+  font-size: $font-size-base;
+  padding-left: 2em;
+  width: 88%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.input-group-select {
+  position: relative;
+}
+
+.input-group-select::after {
+  border-top: solid 8px $gray-light;
+  border-bottom: solid 8px transparent;
+  border-left: solid 8px transparent;
+  border-right: solid 8px transparent;
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(calc(-50% + 4px));
+  width: 0px;
+}
