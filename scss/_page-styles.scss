@@ -97,6 +97,25 @@ body {
   margin-bottom: 2em;
 }
 
+.input-group-select {
+  position: relative;
+}
+
+.input-group-select::after {
+  border-top: solid 8px $gray-light;
+  border-bottom: solid 8px transparent;
+  border-left: solid 8px transparent;
+  border-right: solid 8px transparent;
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(calc(-50% + 4px));
+  width: 0px;
+}
+
 .img-wrapper {
   position: relative;
   width: 6em;
@@ -123,6 +142,7 @@ body {
   border: none;
   font-family: $main-font;
   font-size: $font-size-base;
+  outline-color: $green-light;
   padding-left: 2em;
   width: 78%;
 }
@@ -138,27 +158,56 @@ body {
   color: $gray;
   font-family: $main-font;
   font-size: $font-size-base;
+  outline-color: $green-light;
   padding-left: 2em;
   width: 88%;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.input-group-select {
+.checkbox {
+  display: inline-flex;
+  margin-bottom: 1em;
+  margin-top: -1em;
+  padding-left: 4em;
   position: relative;
 }
 
-.input-group-select::after {
-  border-top: solid 8px $gray-light;
-  border-bottom: solid 8px transparent;
-  border-left: solid 8px transparent;
-  border-right: solid 8px transparent;
-  content: '';
-  height: 0px;
+.checkbox-input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.checkbox-outside {
+  border: 1px solid $gray-input-box;
+  border-radius: 4px;
+  display: block;
+  height: 2.3rem;
+  left: 0;
   pointer-events: none;
   position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(calc(-50% + 4px));
-  width: 0px;
+  top: -3px;
+  width: 2.3rem;
+}
+
+.checkbox-inside {
+  border-radius: 3px;
+  height: 1.3rem;
+  left: 6px;
+  pointer-events: none;
+  position: absolute;
+  top: 3px;
+  width: 1.3rem;
+}
+
+.checkbox-description {
+  color: $gray;
+  font-family: $main-font;
+  font-size: $font-size-checkbox;
+}
+
+.checkbox-input:checked ~ .checkbox-inside {
+  background: linear-gradient(to bottom, $green-light 0%, $green 100%);
+  border-color: $green-dark;
 }
