@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="background">
-      <img class="logo" src="img/logo.png" alt="logo">
+      <img class="logo1" src="img/logo.png" alt="big logo">
       <main class="container">
 
         <!-- REGISTER FORM -->
@@ -76,7 +76,7 @@
               </div>
 
               <label class="checkbox">
-                <input class="checkbox-input" type="checkbox">
+                <input class="checkbox-input" type="checkbox" required>
                 <span class="checkbox-outside"></span>
                 <span class="checkbox-inside"></span>
                 <span class="checkbox-description">I have read and accept the terms of use.</span>
@@ -112,7 +112,7 @@
               </div>
 
               <label class="labels" for="message"></label>
-              <textarea class="message-textarea" id="message" rows="9" placeholder="Type your message..."></textarea>
+              <textarea class="message-textarea" id="message" rows="11" placeholder="Type your message..." required="required"></textarea>
 
               <label class="checkbox">
                 <input class="checkbox-input" type="checkbox">
@@ -150,15 +150,16 @@
                 <input type="password" class="form-input" id="password" placeholder="Password" required>
               </div>
 
-              <label class="checkbox">
-                <input class="checkbox-input" type="checkbox">
-                <span class="checkbox-outside"></span>
-                <span class="checkbox-inside"></span>
-                <span class="checkbox-description">Remember me</span>
-              </label>
+              <div class="wrapper">
+                <label class="checkbox checkbox-align-vertical">
+                  <input class="checkbox-input" type="checkbox">
+                  <span class="checkbox-outside"></span>
+                  <span class="checkbox-inside"></span>
+                  <span class="checkbox-description">Remember me</span>
+                </label>
 
-              <button class="btn btn-small btn-font-large" type="submit">Sign in</button>
-
+                <button class="btn btn-small btn-font-large" type="submit">Sign in</button>
+              </div>
             </form>
           </div>
         </section> <!-- /sign in form -->    
@@ -185,10 +186,11 @@
                 <hr class="vertical-separate-line">
                 <input type="tel" class="form-input" id="phone-number" placeholder="Enter your Phone number" required>
               </div>
-
-              <button class="btn btn-small btn-font-small" type="submit">Send</button>
-              <button class="btn btn-small btn-font-small type="text">Done</button>
-
+              
+              <div class="wrapper">
+                <button class="btn btn-small btn-font-small" type="submit">Send</button>
+                <button class="btn btn-small btn-font-small btn-less-opacity" type="text">Done</button>
+              </div>
             </form>
           </div>
         </section> <!-- /recover form -->   
@@ -207,14 +209,15 @@
                 <input type="email" class="form-input" id="subscribe-email" placeholder="Enter Your Email" required>
               </div>
 
-              <button class="btn btn-small btn-font-small" type="submit">Subscribe</button>
-              <button class="btn btn-small btn-font-small btn-danger" type="text">No, Thanks</button>
-
+              <div class="wrapper">
+                <button class="btn btn-small btn-font-small" type="submit">Subscribe</button>
+                <button class="btn btn-small btn-font-small btn-danger" type="text">No, Thanks</button>
+              </div>
             </form>
           </div>
         </section> <!-- /subscribe form --> 
 
-        <img class="logo logo-small" src="img/logo.png" alt="small logo">
+        <img class="logo2" src="img/logo2.png" alt="small logo">
         <img class="www" src="img/www.png" alt="addres of homepage">
       </main> <!-- /container -->
     </div>
