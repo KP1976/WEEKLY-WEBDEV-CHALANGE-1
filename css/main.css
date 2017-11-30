@@ -33,15 +33,24 @@ body {
 }
 
 /* line 22, ../scss/_page-styles.scss */
-.logo {
+.logo1 {
   display: block;
   margin: 0 auto;
   mix-blend-mode: soft-light;
   padding-top: 5.5rem;
-  width: 429px;
+  max-width: 100%;
 }
 
 /* line 30, ../scss/_page-styles.scss */
+.logo2 {
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: soft-light;
+  padding: 6rem 0 3.5rem;
+  max-width: 100%;
+}
+
+/* line 38, ../scss/_page-styles.scss */
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +66,7 @@ body {
   width: 920px;
 }
 
-/* line 44, ../scss/_page-styles.scss */
+/* line 52, ../scss/_page-styles.scss */
 .register-form,
 .email-form,
 .sign-in-form,
@@ -66,20 +75,24 @@ body {
   width: 42rem;
 }
 
-/* line 52, ../scss/_page-styles.scss */
+/* line 60, ../scss/_page-styles.scss */
 .register-form,
-.sign-in-form,
 .recover-form {
   margin-bottom: 4rem;
 }
 
-/* line 58, ../scss/_page-styles.scss */
+/* line 65, ../scss/_page-styles.scss */
 .register-form,
 .email-form {
   margin-right: 8rem;
 }
 
-/* line 63, ../scss/_page-styles.scss */
+/* line 70, ../scss/_page-styles.scss */
+.sign-in-form {
+  margin-bottom: 2rem;
+}
+
+/* line 74, ../scss/_page-styles.scss */
 .title {
   color: #f4f4f4;
   font-family: "TitilliumText22L_medium";
@@ -90,32 +103,32 @@ body {
   text-shadow: 2px 2px 0px rgba(43, 0, 0, 0.75);
 }
 
-/* line 73, ../scss/_page-styles.scss */
+/* line 84, ../scss/_page-styles.scss */
 .border-box {
   background-color: rgba(0, 0, 0, 0.23);
   border-radius: .4rem;
   padding: 2em;
 }
 
-/* line 79, ../scss/_page-styles.scss */
+/* line 90, ../scss/_page-styles.scss */
 .form-box {
   background-color: #f4f4f4;
   border-radius: .3rem;
   padding: 2em;
 }
 
-/* line 85, ../scss/_page-styles.scss */
+/* line 96, ../scss/_page-styles.scss */
 .sign-in-form .form-box,
 .recover-form .form-box {
   padding: 3em 2em;
 }
 
-/* line 90, ../scss/_page-styles.scss */
+/* line 101, ../scss/_page-styles.scss */
 .subscribe-form .form-box {
   padding: 3em 2em 2em;
 }
 
-/* line 94, ../scss/_page-styles.scss */
+/* line 105, ../scss/_page-styles.scss */
 .labels {
   position: absolute;
   width: 1px;
@@ -127,7 +140,7 @@ body {
   border: 0;
 }
 
-/* line 105, ../scss/_page-styles.scss */
+/* line 116, ../scss/_page-styles.scss */
 .input-group, .input-group-select {
   border: solid 1px #c6c6c6;
   border-radius: .3rem;
@@ -138,12 +151,12 @@ body {
   margin-bottom: 2em;
 }
 
-/* line 113, ../scss/_page-styles.scss */
+/* line 124, ../scss/_page-styles.scss */
 .input-group-select {
   position: relative;
 }
 
-/* line 117, ../scss/_page-styles.scss */
+/* line 128, ../scss/_page-styles.scss */
 .input-group-select::after {
   border-top: solid 0.8rem #dedede;
   border-bottom: solid .8rem transparent;
@@ -160,13 +173,13 @@ body {
   width: 0;
 }
 
-/* line 132, ../scss/_page-styles.scss */
+/* line 143, ../scss/_page-styles.scss */
 .img-wrapper {
   position: relative;
   width: 6em;
 }
 
-/* line 137, ../scss/_page-styles.scss */
+/* line 148, ../scss/_page-styles.scss */
 .icons {
   -webkit-filter: invert(87%);
           filter: invert(87%);
@@ -178,26 +191,26 @@ body {
           transform: translate(-50%, -50%);
 }
 
-/* line 146, ../scss/_page-styles.scss */
+/* line 157, ../scss/_page-styles.scss */
 .vertical-separate-line {
   border: solid 1px #e4e4e4;
   background-color: #e4e4e4;
   height: 30px;
-  margin: 6px 0 0 0;
+  margin: 3px 0 0 0;
   width: 0px;
 }
 
-/* line 154, ../scss/_page-styles.scss */
+/* line 165, ../scss/_page-styles.scss */
 .form-input {
   border: none;
   font-family: "TitilliumText22L_light";
   font-size: 1.6rem;
   outline-color: #addc54;
   padding-left: 2em;
-  width: 78%;
+  width: 100%;
 }
 
-/* line 163, ../scss/_page-styles.scss */
+/* line 174, ../scss/_page-styles.scss */
 .form-input::-webkit-input-placeholder {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
@@ -219,7 +232,7 @@ body {
   font-size: 1.6rem;
 }
 
-/* line 169, ../scss/_page-styles.scss */
+/* line 180, ../scss/_page-styles.scss */
 .select-location {
   border: none;
   color: #afafaf;
@@ -232,12 +245,12 @@ body {
   -moz-appearance: none;
 }
 
-/* line 181, ../scss/_page-styles.scss */
+/* line 192, ../scss/_page-styles.scss */
 .select-location option {
   color: black;
 }
 
-/* line 185, ../scss/_page-styles.scss */
+/* line 196, ../scss/_page-styles.scss */
 .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -250,7 +263,7 @@ body {
           justify-content: space-between;
 }
 
-/* line 191, ../scss/_page-styles.scss */
+/* line 202, ../scss/_page-styles.scss */
 .checkbox {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -261,19 +274,19 @@ body {
   position: relative;
 }
 
-/* line 199, ../scss/_page-styles.scss */
+/* line 210, ../scss/_page-styles.scss */
 .checkbox-align-vertical {
   margin: 2px 0 0 0;
 }
 
-/* line 203, ../scss/_page-styles.scss */
+/* line 214, ../scss/_page-styles.scss */
 .checkbox-input {
   opacity: 0;
   position: absolute;
   z-index: -1;
 }
 
-/* line 209, ../scss/_page-styles.scss */
+/* line 220, ../scss/_page-styles.scss */
 .checkbox-outside {
   border: 1px solid #c6c6c6;
   border-radius: .4rem;
@@ -286,7 +299,7 @@ body {
   width: 2.3rem;
 }
 
-/* line 221, ../scss/_page-styles.scss */
+/* line 232, ../scss/_page-styles.scss */
 .checkbox-inside {
   border-radius: .3rem;
   height: 1.3em;
@@ -297,14 +310,14 @@ body {
   width: 1.3em;
 }
 
-/* line 231, ../scss/_page-styles.scss */
+/* line 242, ../scss/_page-styles.scss */
 .checkbox-description {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
   font-size: 1.735rem;
 }
 
-/* line 237, ../scss/_page-styles.scss */
+/* line 248, ../scss/_page-styles.scss */
 .checkbox-input:checked ~ .checkbox-inside {
   -webkit-animation-name: simple-anim;
           animation-name: simple-anim;
@@ -317,66 +330,68 @@ body {
   border-color: #3b9a00;
 }
 
-/* line 245, ../scss/_page-styles.scss */
+/* line 256, ../scss/_page-styles.scss */
 .btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#addc54), to(#7ec31f));
   background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
   border: solid 1px #3b9a00;
   border-radius: .3rem;
   color: #f4f4f4;
+  cursor: pointer;
   font-family: "TitilliumText22L_light";
   font-weight: 400;
   height: 4.8rem;
   text-shadow: 1px 1px 0px rgba(43, 0, 0, 0.75);
 }
 
-/* line 256, ../scss/_page-styles.scss */
+/* line 268, ../scss/_page-styles.scss */
 .btn-large {
   width: 100%;
 }
 
-/* line 260, ../scss/_page-styles.scss */
+/* line 272, ../scss/_page-styles.scss */
 .btn-small {
   height: 4rem;
   width: 14rem;
 }
 
-/* line 265, ../scss/_page-styles.scss */
+/* line 277, ../scss/_page-styles.scss */
 .btn-font-large {
   font-size: 2.4rem;
 }
 
-/* line 269, ../scss/_page-styles.scss */
+/* line 281, ../scss/_page-styles.scss */
 .btn-font-small {
   font-size: 1.8rem;
 }
 
-/* line 273, ../scss/_page-styles.scss */
+/* line 285, ../scss/_page-styles.scss */
 .btn-less-opacity {
   background: -webkit-gradient(linear, left top, left bottom, from(#cde4b0), to(#abd182));
   background: linear-gradient(to bottom, #cde4b0 0%, #abd182 100%);
   border: solid 1px #90ca6d;
 }
 
-/* line 278, ../scss/_page-styles.scss */
+/* line 290, ../scss/_page-styles.scss */
 .btn-danger {
   background: -webkit-gradient(linear, left top, left bottom, from(#f76f7f), to(#f03747));
   background: linear-gradient(to bottom, #f76f7f 0%, #f03747 100%);
 }
 
-/* line 282, ../scss/_page-styles.scss */
+/* line 294, ../scss/_page-styles.scss */
 .message-textarea {
   border: solid 1px #c6c6c6;
   border-radius: .3rem;
   font-family: "TitilliumText22L_light";
   font-size: 1.6rem;
   margin-bottom: 2rem;
+  outline-color: #addc54;
   padding: 1rem 1.5rem;
   resize: vertical;
   width: 100%;
 }
 
-/* line 293, ../scss/_page-styles.scss */
+/* line 306, ../scss/_page-styles.scss */
 .message-textarea::-webkit-input-placeholder {
   color: #afafaf;
 }
@@ -388,6 +403,14 @@ body {
 }
 .message-textarea::placeholder {
   color: #afafaf;
+}
+
+/* line 310, ../scss/_page-styles.scss */
+.www {
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: soft-light;
+  width: 246px;
 }
 
 @-webkit-keyframes simple-anim {
