@@ -17,7 +17,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;  
-  padding: 0 1rem;
+  padding: 0 1rem 5rem;
 }
 
 .logo1 {
@@ -36,8 +36,9 @@ body {
   width: 100%;
 
   @include mediaQueriesMin(768px) {
-    height: 120rem;
-    width: 700px;
+    align-items: center;
+    height: 130rem;
+    width: 730px;
   }
 
   @include mediaQueriesMin(992px) {
@@ -179,28 +180,64 @@ body {
 .form-input {
   border: none;
   font-family: $main-font;
-  font-size: $font-size-base;
+  font-size: $font-size-base-small;
   outline-color: $green-light;
   padding-left: 2em;
   width: 100%;
+
+  @include mediaQueriesMin(480px) {
+    font-size: $font-size-base;
+  }
+
+  @include mediaQueriesMin(768px) {
+    font-size: $font-size-base-small;
+  }
+
+  @include mediaQueriesMin(992px) {
+    font-size: $font-size-base;
+  }
 }
 
 .form-input::placeholder {
   color: $gray;
   font-family: $main-font;
-  font-size: $font-size-base;
+  font-size: $font-size-base-small;
+
+  @include mediaQueriesMin(480px) {
+    font-size: $font-size-base;
+  }
+
+  @include mediaQueriesMin(768px) {
+    font-size: $font-size-base-small;
+  }
+
+  @include mediaQueriesMin(992px) {
+    font-size: $font-size-base;
+  }
 }
 
 .select-location {
   border: none;
   color: $gray;
   font-family: $main-font;
-  font-size: $font-size-base;
+  font-size: $font-size-base-small;
   outline-color: $green-light;
   padding-left: 2em;
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  @include mediaQueriesMin(480px) {
+    font-size: $font-size-base;
+  }
+
+  @include mediaQueriesMin(768px) {
+    font-size: $font-size-base-small;
+  }
+
+  @include mediaQueriesMin(992px) {
+    font-size: $font-size-base;
+  }
 }
 
 .select-location option {
@@ -210,7 +247,20 @@ body {
 .wrapper {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  @include mediaQueriesMin(480px) {
+    flex-direction: row;
+  }
+
+  @include mediaQueriesMin(768px) {
+    flex-direction: column;
+  }
+
+  @include mediaQueriesMin(992px) {
+    flex-direction: row;
+  }
 }
 
 .checkbox {
@@ -256,7 +306,19 @@ body {
 .checkbox-description {
   color: $gray;
   font-family: $main-font;
-  font-size: $font-size-checkbox;
+  font-size: $font-size-checkbox-small;
+
+  @include mediaQueriesMin(480px) {
+    font-size: $font-size-checkbox;
+  }
+
+  @include mediaQueriesMin(768px) {
+    font-size: $font-size-checkbox-small;
+  }
+
+  @include mediaQueriesMin(992px) {
+    font-size: $font-size-checkbox;
+  }
 }
 
 .checkbox-input:checked ~ .checkbox-inside {
@@ -277,6 +339,38 @@ body {
   font-weight: $font-normal-weight;
   height: 4.8rem;
   text-shadow: 1px 1px 0px rgba(43, 0, 0, 0.75);
+}
+
+.sign-in-form .btn {
+  margin-top: 3rem;
+
+  @include mediaQueriesMin(480px) {
+     margin-top: 0;
+  }
+
+  @include mediaQueriesMin(768px) {
+    margin-top: 3rem;
+  }
+
+  @include mediaQueriesMin(992px) {
+    margin-top: 0;
+  }
+}
+
+.recover-form .btn-less-opacity, .subscribe-form .btn-danger {
+  margin-top: 2rem;
+
+  @include mediaQueriesMin(480px) {
+     margin-top: 0;
+  }
+
+  @include mediaQueriesMin(768px) {
+    margin-top: 2rem;
+  }
+
+  @include mediaQueriesMin(992px) {
+    margin-top: 0;
+  }
 }
 
 .btn-large {
@@ -327,13 +421,21 @@ body {
   mix-blend-mode: soft-light;
   padding: 6rem 0 3.5rem;
   max-width: 100%;
+
+  @include mediaQueriesMin(768px) {
+    width: 250px;
+  }
+
+  @include mediaQueriesMin(992px) {
+    width: auto;
+  }
 }
 
 .www {
   display: block;
   margin: 0 auto;
   mix-blend-mode: soft-light;
-  width: 246px; 
+  max-width: 100%; 
 }
 
 //ANIMATIONS

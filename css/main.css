@@ -30,7 +30,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 1rem;
+  padding: 0 1rem 5rem;
 }
 
 /* line 23, ../scss/_page-styles.scss */
@@ -59,8 +59,11 @@ body {
 @media screen and (min-width: 768px) {
   /* line 31, ../scss/_page-styles.scss */
   .container {
-    height: 120rem;
-    width: 700px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 130rem;
+    width: 730px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -71,7 +74,7 @@ body {
   }
 }
 
-/* line 54, ../scss/_page-styles.scss */
+/* line 55, ../scss/_page-styles.scss */
 .register-form,
 .email-form,
 .sign-in-form,
@@ -80,7 +83,7 @@ body {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 54, ../scss/_page-styles.scss */
+  /* line 55, ../scss/_page-styles.scss */
   .register-form,
   .email-form,
   .sign-in-form,
@@ -90,7 +93,7 @@ body {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 54, ../scss/_page-styles.scss */
+  /* line 55, ../scss/_page-styles.scss */
   .register-form,
   .email-form,
   .sign-in-form,
@@ -100,7 +103,7 @@ body {
   }
 }
 
-/* line 70, ../scss/_page-styles.scss */
+/* line 71, ../scss/_page-styles.scss */
 .register-form,
 .email-form,
 .sign-in-form,
@@ -108,20 +111,20 @@ body {
   margin-bottom: 4rem;
 }
 
-/* line 77, ../scss/_page-styles.scss */
+/* line 78, ../scss/_page-styles.scss */
 .register-form,
 .email-form {
   margin-right: 8rem;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 82, ../scss/_page-styles.scss */
+  /* line 83, ../scss/_page-styles.scss */
   .sign-in-form {
     margin-bottom: 2rem;
   }
 }
 
-/* line 88, ../scss/_page-styles.scss */
+/* line 89, ../scss/_page-styles.scss */
 .title {
   color: #f4f4f4;
   font-family: "TitilliumText22L_medium";
@@ -132,32 +135,32 @@ body {
   text-shadow: 2px 2px 0px rgba(43, 0, 0, 0.75);
 }
 
-/* line 98, ../scss/_page-styles.scss */
+/* line 99, ../scss/_page-styles.scss */
 .border-box {
   background-color: rgba(0, 0, 0, 0.23);
   border-radius: .4rem;
   padding: 2em;
 }
 
-/* line 104, ../scss/_page-styles.scss */
+/* line 105, ../scss/_page-styles.scss */
 .form-box {
   background-color: #f4f4f4;
   border-radius: .3rem;
   padding: 2em;
 }
 
-/* line 110, ../scss/_page-styles.scss */
+/* line 111, ../scss/_page-styles.scss */
 .sign-in-form .form-box,
 .recover-form .form-box {
   padding: 3em 2em;
 }
 
-/* line 115, ../scss/_page-styles.scss */
+/* line 116, ../scss/_page-styles.scss */
 .subscribe-form .form-box {
   padding: 3em 2em 2em;
 }
 
-/* line 119, ../scss/_page-styles.scss */
+/* line 120, ../scss/_page-styles.scss */
 .labels {
   position: absolute;
   width: 1px;
@@ -169,7 +172,7 @@ body {
   border: 0;
 }
 
-/* line 130, ../scss/_page-styles.scss */
+/* line 131, ../scss/_page-styles.scss */
 .input-group, .input-group-select {
   border: solid 1px #c6c6c6;
   border-radius: .3rem;
@@ -180,12 +183,12 @@ body {
   margin-bottom: 2em;
 }
 
-/* line 138, ../scss/_page-styles.scss */
+/* line 139, ../scss/_page-styles.scss */
 .input-group-select {
   position: relative;
 }
 
-/* line 142, ../scss/_page-styles.scss */
+/* line 143, ../scss/_page-styles.scss */
 .input-group-select::after {
   border-top: solid 0.8rem #dedede;
   border-bottom: solid .8rem transparent;
@@ -202,13 +205,13 @@ body {
   width: 0;
 }
 
-/* line 157, ../scss/_page-styles.scss */
+/* line 158, ../scss/_page-styles.scss */
 .img-wrapper {
   position: relative;
   width: 6em;
 }
 
-/* line 162, ../scss/_page-styles.scss */
+/* line 163, ../scss/_page-styles.scss */
 .icons {
   -webkit-filter: invert(87%);
           filter: invert(87%);
@@ -220,7 +223,7 @@ body {
           transform: translate(-50%, -50%);
 }
 
-/* line 171, ../scss/_page-styles.scss */
+/* line 172, ../scss/_page-styles.scss */
 .vertical-separate-line {
   border: solid 1px #e4e4e4;
   background-color: #e4e4e4;
@@ -229,57 +232,138 @@ body {
   width: 0px;
 }
 
-/* line 179, ../scss/_page-styles.scss */
+/* line 180, ../scss/_page-styles.scss */
 .form-input {
   border: none;
   font-family: "TitilliumText22L_light";
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   outline-color: #addc54;
   padding-left: 2em;
   width: 100%;
 }
+@media screen and (min-width: 480px) {
+  /* line 180, ../scss/_page-styles.scss */
+  .form-input {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 180, ../scss/_page-styles.scss */
+  .form-input {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 180, ../scss/_page-styles.scss */
+  .form-input {
+    font-size: 1.6rem;
+  }
+}
 
-/* line 188, ../scss/_page-styles.scss */
+/* line 201, ../scss/_page-styles.scss */
 .form-input::-webkit-input-placeholder {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .form-input:-ms-input-placeholder {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .form-input::-ms-input-placeholder {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .form-input::placeholder {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 480px) {
+  /* line 201, ../scss/_page-styles.scss */
+  .form-input::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .form-input:-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .form-input::-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .form-input::placeholder {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 201, ../scss/_page-styles.scss */
+  .form-input::-webkit-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .form-input:-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .form-input::-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .form-input::placeholder {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 201, ../scss/_page-styles.scss */
+  .form-input::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .form-input:-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .form-input::-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .form-input::placeholder {
+    font-size: 1.6rem;
+  }
 }
 
-/* line 194, ../scss/_page-styles.scss */
+/* line 219, ../scss/_page-styles.scss */
 .select-location {
   border: none;
   color: #afafaf;
   font-family: "TitilliumText22L_light";
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   outline-color: #addc54;
   padding-left: 2em;
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+@media screen and (min-width: 480px) {
+  /* line 219, ../scss/_page-styles.scss */
+  .select-location {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 219, ../scss/_page-styles.scss */
+  .select-location {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 219, ../scss/_page-styles.scss */
+  .select-location {
+    font-size: 1.6rem;
+  }
+}
 
-/* line 206, ../scss/_page-styles.scss */
+/* line 243, ../scss/_page-styles.scss */
 .select-location option {
   color: black;
 }
 
-/* line 210, ../scss/_page-styles.scss */
+/* line 247, ../scss/_page-styles.scss */
 .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -287,12 +371,43 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (min-width: 480px) {
+  /* line 247, ../scss/_page-styles.scss */
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 247, ../scss/_page-styles.scss */
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 247, ../scss/_page-styles.scss */
+  .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
-/* line 216, ../scss/_page-styles.scss */
+/* line 266, ../scss/_page-styles.scss */
 .checkbox {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -303,19 +418,19 @@ body {
   position: relative;
 }
 
-/* line 224, ../scss/_page-styles.scss */
+/* line 274, ../scss/_page-styles.scss */
 .checkbox-align-vertical {
   margin: 2px 0 0 0;
 }
 
-/* line 228, ../scss/_page-styles.scss */
+/* line 278, ../scss/_page-styles.scss */
 .checkbox-input {
   opacity: 0;
   position: absolute;
   z-index: -1;
 }
 
-/* line 234, ../scss/_page-styles.scss */
+/* line 284, ../scss/_page-styles.scss */
 .checkbox-outside {
   border: 1px solid #c6c6c6;
   border-radius: .4rem;
@@ -328,7 +443,7 @@ body {
   width: 2.3rem;
 }
 
-/* line 246, ../scss/_page-styles.scss */
+/* line 296, ../scss/_page-styles.scss */
 .checkbox-inside {
   border-radius: .3rem;
   height: 1.3em;
@@ -339,14 +454,32 @@ body {
   width: 1.3em;
 }
 
-/* line 256, ../scss/_page-styles.scss */
+/* line 306, ../scss/_page-styles.scss */
 .checkbox-description {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
-  font-size: 1.735rem;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 480px) {
+  /* line 306, ../scss/_page-styles.scss */
+  .checkbox-description {
+    font-size: 1.735rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 306, ../scss/_page-styles.scss */
+  .checkbox-description {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 306, ../scss/_page-styles.scss */
+  .checkbox-description {
+    font-size: 1.735rem;
+  }
 }
 
-/* line 262, ../scss/_page-styles.scss */
+/* line 324, ../scss/_page-styles.scss */
 .checkbox-input:checked ~ .checkbox-inside {
   -webkit-animation-name: simple-anim;
           animation-name: simple-anim;
@@ -359,7 +492,7 @@ body {
   border-color: #3b9a00;
 }
 
-/* line 270, ../scss/_page-styles.scss */
+/* line 332, ../scss/_page-styles.scss */
 .btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#addc54), to(#7ec31f));
   background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
@@ -373,41 +506,87 @@ body {
   text-shadow: 1px 1px 0px rgba(43, 0, 0, 0.75);
 }
 
-/* line 282, ../scss/_page-styles.scss */
+/* line 344, ../scss/_page-styles.scss */
+.sign-in-form .btn {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 480px) {
+  /* line 344, ../scss/_page-styles.scss */
+  .sign-in-form .btn {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 344, ../scss/_page-styles.scss */
+  .sign-in-form .btn {
+    margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 344, ../scss/_page-styles.scss */
+  .sign-in-form .btn {
+    margin-top: 0;
+  }
+}
+
+/* line 360, ../scss/_page-styles.scss */
+.recover-form .btn-less-opacity, .subscribe-form .btn-danger {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 480px) {
+  /* line 360, ../scss/_page-styles.scss */
+  .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 360, ../scss/_page-styles.scss */
+  .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 360, ../scss/_page-styles.scss */
+  .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
+    margin-top: 0;
+  }
+}
+
+/* line 376, ../scss/_page-styles.scss */
 .btn-large {
   width: 100%;
 }
 
-/* line 286, ../scss/_page-styles.scss */
+/* line 380, ../scss/_page-styles.scss */
 .btn-small {
   height: 4rem;
   width: 14rem;
 }
 
-/* line 291, ../scss/_page-styles.scss */
+/* line 385, ../scss/_page-styles.scss */
 .btn-font-large {
   font-size: 2.4rem;
 }
 
-/* line 295, ../scss/_page-styles.scss */
+/* line 389, ../scss/_page-styles.scss */
 .btn-font-small {
   font-size: 1.8rem;
 }
 
-/* line 299, ../scss/_page-styles.scss */
+/* line 393, ../scss/_page-styles.scss */
 .btn-less-opacity {
   background: -webkit-gradient(linear, left top, left bottom, from(#cde4b0), to(#abd182));
   background: linear-gradient(to bottom, #cde4b0 0%, #abd182 100%);
   border: solid 1px #90ca6d;
 }
 
-/* line 304, ../scss/_page-styles.scss */
+/* line 398, ../scss/_page-styles.scss */
 .btn-danger {
   background: -webkit-gradient(linear, left top, left bottom, from(#f76f7f), to(#f03747));
   background: linear-gradient(to bottom, #f76f7f 0%, #f03747 100%);
 }
 
-/* line 308, ../scss/_page-styles.scss */
+/* line 402, ../scss/_page-styles.scss */
 .message-textarea {
   border: solid 1px #c6c6c6;
   border-radius: .3rem;
@@ -420,7 +599,7 @@ body {
   width: 100%;
 }
 
-/* line 320, ../scss/_page-styles.scss */
+/* line 414, ../scss/_page-styles.scss */
 .message-textarea::-webkit-input-placeholder {
   color: #afafaf;
 }
@@ -434,7 +613,7 @@ body {
   color: #afafaf;
 }
 
-/* line 324, ../scss/_page-styles.scss */
+/* line 418, ../scss/_page-styles.scss */
 .logo2 {
   display: block;
   margin: 0 auto;
@@ -442,13 +621,25 @@ body {
   padding: 6rem 0 3.5rem;
   max-width: 100%;
 }
+@media screen and (min-width: 768px) {
+  /* line 418, ../scss/_page-styles.scss */
+  .logo2 {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 418, ../scss/_page-styles.scss */
+  .logo2 {
+    width: auto;
+  }
+}
 
-/* line 332, ../scss/_page-styles.scss */
+/* line 434, ../scss/_page-styles.scss */
 .www {
   display: block;
   margin: 0 auto;
   mix-blend-mode: soft-light;
-  width: 246px;
+  max-width: 100%;
 }
 
 @-webkit-keyframes simple-anim {
