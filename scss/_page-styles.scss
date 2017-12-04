@@ -36,7 +36,6 @@ body {
   width: 100%;
 
   @include mediaQueriesMin(768px) {
-    align-items: center;
     height: 130rem;
     width: 730px;
   }
@@ -45,11 +44,6 @@ body {
     height: 120rem;
     width: 920px;
   }
-  
-//  @supports (display: grid) {
-//    display: grid;
-//    grid-template-columns: 1fr 1fr;
-//  }
 }
 
 .register-form,
@@ -265,7 +259,6 @@ body {
 
 .checkbox {
   display: inline-flex;
-  margin-bottom: 1em;
   margin-top: -1em;
   padding-left: 4em;
   position: relative;
@@ -374,6 +367,7 @@ body {
 }
 
 .btn-large {
+  margin-top: 1.5rem;
   width: 100%;
 }
 
@@ -421,13 +415,14 @@ body {
   mix-blend-mode: soft-light;
   padding: 6rem 0 3.5rem;
   max-width: 100%;
+  width: 353px;
 
   @include mediaQueriesMin(768px) {
     width: 250px;
   }
 
   @include mediaQueriesMin(992px) {
-    width: auto;
+    width: 353px;
   }
 }
 

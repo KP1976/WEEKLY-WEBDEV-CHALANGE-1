@@ -6,25 +6,21 @@
   font-family: "TitilliumText22L_medium";
   src: url("../fonts/TitilliumText22L_medium.otf") format("opentype");
 }
-/* line 1, ../scss/_page-styles.scss */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 5, ../scss/_page-styles.scss */
 html {
   font-family: "TitilliumText22L_light";
   font-size: 10px;
 }
 
-/* line 10, ../scss/_page-styles.scss */
 body {
   margin: 0;
   padding: 0;
 }
 
-/* line 15, ../scss/_page-styles.scss */
 .background {
   background-image: url("../img/bg.jpg");
   background-position: center center;
@@ -33,7 +29,6 @@ body {
   padding: 0 1rem 5rem;
 }
 
-/* line 23, ../scss/_page-styles.scss */
 .logo1 {
   display: block;
   margin: 0 auto;
@@ -42,7 +37,6 @@ body {
   max-width: 100%;
 }
 
-/* line 31, ../scss/_page-styles.scss */
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,24 +51,18 @@ body {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 31, ../scss/_page-styles.scss */
   .container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     height: 130rem;
     width: 730px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 31, ../scss/_page-styles.scss */
   .container {
     height: 120rem;
     width: 920px;
   }
 }
 
-/* line 55, ../scss/_page-styles.scss */
 .register-form,
 .email-form,
 .sign-in-form,
@@ -83,7 +71,6 @@ body {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  /* line 55, ../scss/_page-styles.scss */
   .register-form,
   .email-form,
   .sign-in-form,
@@ -93,7 +80,6 @@ body {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 55, ../scss/_page-styles.scss */
   .register-form,
   .email-form,
   .sign-in-form,
@@ -103,7 +89,6 @@ body {
   }
 }
 
-/* line 71, ../scss/_page-styles.scss */
 .register-form,
 .email-form,
 .sign-in-form,
@@ -111,20 +96,17 @@ body {
   margin-bottom: 4rem;
 }
 
-/* line 78, ../scss/_page-styles.scss */
 .register-form,
 .email-form {
   margin-right: 8rem;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 83, ../scss/_page-styles.scss */
   .sign-in-form {
     margin-bottom: 2rem;
   }
 }
 
-/* line 89, ../scss/_page-styles.scss */
 .title {
   color: #f4f4f4;
   font-family: "TitilliumText22L_medium";
@@ -135,32 +117,27 @@ body {
   text-shadow: 2px 2px 0px rgba(43, 0, 0, 0.75);
 }
 
-/* line 99, ../scss/_page-styles.scss */
 .border-box {
   background-color: rgba(0, 0, 0, 0.23);
   border-radius: .4rem;
   padding: 2em;
 }
 
-/* line 105, ../scss/_page-styles.scss */
 .form-box {
   background-color: #f4f4f4;
   border-radius: .3rem;
   padding: 2em;
 }
 
-/* line 111, ../scss/_page-styles.scss */
 .sign-in-form .form-box,
 .recover-form .form-box {
   padding: 3em 2em;
 }
 
-/* line 116, ../scss/_page-styles.scss */
 .subscribe-form .form-box {
   padding: 3em 2em 2em;
 }
 
-/* line 120, ../scss/_page-styles.scss */
 .labels {
   position: absolute;
   width: 1px;
@@ -172,7 +149,6 @@ body {
   border: 0;
 }
 
-/* line 131, ../scss/_page-styles.scss */
 .input-group, .input-group-select {
   border: solid 1px #c6c6c6;
   border-radius: .3rem;
@@ -183,12 +159,10 @@ body {
   margin-bottom: 2em;
 }
 
-/* line 139, ../scss/_page-styles.scss */
 .input-group-select {
   position: relative;
 }
 
-/* line 143, ../scss/_page-styles.scss */
 .input-group-select::after {
   border-top: solid 0.8rem #dedede;
   border-bottom: solid .8rem transparent;
@@ -205,13 +179,11 @@ body {
   width: 0;
 }
 
-/* line 158, ../scss/_page-styles.scss */
 .img-wrapper {
   position: relative;
   width: 6em;
 }
 
-/* line 163, ../scss/_page-styles.scss */
 .icons {
   -webkit-filter: invert(87%);
           filter: invert(87%);
@@ -223,7 +195,6 @@ body {
           transform: translate(-50%, -50%);
 }
 
-/* line 172, ../scss/_page-styles.scss */
 .vertical-separate-line {
   border: solid 1px #e4e4e4;
   background-color: #e4e4e4;
@@ -232,7 +203,6 @@ body {
   width: 0px;
 }
 
-/* line 180, ../scss/_page-styles.scss */
 .form-input {
   border: none;
   font-family: "TitilliumText22L_light";
@@ -242,47 +212,45 @@ body {
   width: 100%;
 }
 @media screen and (min-width: 480px) {
-  /* line 180, ../scss/_page-styles.scss */
   .form-input {
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 180, ../scss/_page-styles.scss */
   .form-input {
     font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 180, ../scss/_page-styles.scss */
   .form-input {
     font-size: 1.6rem;
   }
 }
 
-/* line 201, ../scss/_page-styles.scss */
 .form-input::-webkit-input-placeholder {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
 }
+
 .form-input:-ms-input-placeholder {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
 }
+
 .form-input::-ms-input-placeholder {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
 }
+
 .form-input::placeholder {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
 }
 @media screen and (min-width: 480px) {
-  /* line 201, ../scss/_page-styles.scss */
   .form-input::-webkit-input-placeholder {
     font-size: 1.6rem;
   }
@@ -297,7 +265,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 201, ../scss/_page-styles.scss */
   .form-input::-webkit-input-placeholder {
     font-size: 1.2rem;
   }
@@ -312,7 +279,6 @@ body {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 201, ../scss/_page-styles.scss */
   .form-input::-webkit-input-placeholder {
     font-size: 1.6rem;
   }
@@ -327,7 +293,6 @@ body {
   }
 }
 
-/* line 219, ../scss/_page-styles.scss */
 .select-location {
   border: none;
   color: #afafaf;
@@ -340,30 +305,25 @@ body {
   -moz-appearance: none;
 }
 @media screen and (min-width: 480px) {
-  /* line 219, ../scss/_page-styles.scss */
   .select-location {
     font-size: 1.6rem;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 219, ../scss/_page-styles.scss */
   .select-location {
     font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 219, ../scss/_page-styles.scss */
   .select-location {
     font-size: 1.6rem;
   }
 }
 
-/* line 243, ../scss/_page-styles.scss */
 .select-location option {
   color: black;
 }
 
-/* line 247, ../scss/_page-styles.scss */
 .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -380,7 +340,6 @@ body {
           justify-content: space-between;
 }
 @media screen and (min-width: 480px) {
-  /* line 247, ../scss/_page-styles.scss */
   .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -389,7 +348,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 247, ../scss/_page-styles.scss */
   .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -398,7 +356,6 @@ body {
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 247, ../scss/_page-styles.scss */
   .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -407,30 +364,25 @@ body {
   }
 }
 
-/* line 266, ../scss/_page-styles.scss */
 .checkbox {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-bottom: 1em;
   margin-top: -1em;
   padding-left: 4em;
   position: relative;
 }
 
-/* line 274, ../scss/_page-styles.scss */
 .checkbox-align-vertical {
   margin: 2px 0 0 0;
 }
 
-/* line 278, ../scss/_page-styles.scss */
 .checkbox-input {
   opacity: 0;
   position: absolute;
   z-index: -1;
 }
 
-/* line 284, ../scss/_page-styles.scss */
 .checkbox-outside {
   border: 1px solid #c6c6c6;
   border-radius: .4rem;
@@ -443,7 +395,6 @@ body {
   width: 2.3rem;
 }
 
-/* line 296, ../scss/_page-styles.scss */
 .checkbox-inside {
   border-radius: .3rem;
   height: 1.3em;
@@ -454,32 +405,27 @@ body {
   width: 1.3em;
 }
 
-/* line 306, ../scss/_page-styles.scss */
 .checkbox-description {
   color: #afafaf;
   font-family: "TitilliumText22L_light";
   font-size: 1.3rem;
 }
 @media screen and (min-width: 480px) {
-  /* line 306, ../scss/_page-styles.scss */
   .checkbox-description {
     font-size: 1.735rem;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 306, ../scss/_page-styles.scss */
   .checkbox-description {
     font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 306, ../scss/_page-styles.scss */
   .checkbox-description {
     font-size: 1.735rem;
   }
 }
 
-/* line 324, ../scss/_page-styles.scss */
 .checkbox-input:checked ~ .checkbox-inside {
   -webkit-animation-name: simple-anim;
           animation-name: simple-anim;
@@ -492,7 +438,6 @@ body {
   border-color: #3b9a00;
 }
 
-/* line 332, ../scss/_page-styles.scss */
 .btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#addc54), to(#7ec31f));
   background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
@@ -506,87 +451,73 @@ body {
   text-shadow: 1px 1px 0px rgba(43, 0, 0, 0.75);
 }
 
-/* line 344, ../scss/_page-styles.scss */
 .sign-in-form .btn {
   margin-top: 3rem;
 }
 @media screen and (min-width: 480px) {
-  /* line 344, ../scss/_page-styles.scss */
   .sign-in-form .btn {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 344, ../scss/_page-styles.scss */
   .sign-in-form .btn {
     margin-top: 3rem;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 344, ../scss/_page-styles.scss */
   .sign-in-form .btn {
     margin-top: 0;
   }
 }
 
-/* line 360, ../scss/_page-styles.scss */
 .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
   margin-top: 2rem;
 }
 @media screen and (min-width: 480px) {
-  /* line 360, ../scss/_page-styles.scss */
   .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 360, ../scss/_page-styles.scss */
   .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
     margin-top: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 360, ../scss/_page-styles.scss */
   .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
     margin-top: 0;
   }
 }
 
-/* line 376, ../scss/_page-styles.scss */
 .btn-large {
+  margin-top: 1.5rem;
   width: 100%;
 }
 
-/* line 380, ../scss/_page-styles.scss */
 .btn-small {
   height: 4rem;
   width: 14rem;
 }
 
-/* line 385, ../scss/_page-styles.scss */
 .btn-font-large {
   font-size: 2.4rem;
 }
 
-/* line 389, ../scss/_page-styles.scss */
 .btn-font-small {
   font-size: 1.8rem;
 }
 
-/* line 393, ../scss/_page-styles.scss */
 .btn-less-opacity {
   background: -webkit-gradient(linear, left top, left bottom, from(#cde4b0), to(#abd182));
   background: linear-gradient(to bottom, #cde4b0 0%, #abd182 100%);
   border: solid 1px #90ca6d;
 }
 
-/* line 398, ../scss/_page-styles.scss */
 .btn-danger {
   background: -webkit-gradient(linear, left top, left bottom, from(#f76f7f), to(#f03747));
   background: linear-gradient(to bottom, #f76f7f 0%, #f03747 100%);
 }
 
-/* line 402, ../scss/_page-styles.scss */
 .message-textarea {
   border: solid 1px #c6c6c6;
   border-radius: .3rem;
@@ -599,42 +530,41 @@ body {
   width: 100%;
 }
 
-/* line 414, ../scss/_page-styles.scss */
 .message-textarea::-webkit-input-placeholder {
   color: #afafaf;
 }
+
 .message-textarea:-ms-input-placeholder {
   color: #afafaf;
 }
+
 .message-textarea::-ms-input-placeholder {
   color: #afafaf;
 }
+
 .message-textarea::placeholder {
   color: #afafaf;
 }
 
-/* line 418, ../scss/_page-styles.scss */
 .logo2 {
   display: block;
   margin: 0 auto;
   mix-blend-mode: soft-light;
   padding: 6rem 0 3.5rem;
   max-width: 100%;
+  width: 353px;
 }
 @media screen and (min-width: 768px) {
-  /* line 418, ../scss/_page-styles.scss */
   .logo2 {
     width: 250px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 418, ../scss/_page-styles.scss */
   .logo2 {
-    width: auto;
+    width: 353px;
   }
 }
 
-/* line 434, ../scss/_page-styles.scss */
 .www {
   display: block;
   margin: 0 auto;
