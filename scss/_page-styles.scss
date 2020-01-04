@@ -1,447 +1,439 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: $main-font;
-  font-size: 10px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.background {
-  background-image: url('../img/bg.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;  
-  padding: 0 1rem 5rem;
-}
+// .background {
+// 	background-image: url('../img/bg.jpg');
+// 	background-position: center center;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	padding: 0 1rem 5rem;
+// }
 
 .logo1 {
-  display: block;
-  margin: 0 auto;
-  mix-blend-mode: soft-light;
-  padding-top: 5.5rem;
-  max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	// mix-blend-mode: soft-light;
+	padding-top: 5.5rem;
+	max-width: 100%;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 2.5rem auto 0;
-  width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 2.5rem auto 0;
+	width: 100%;
 
-  @include mediaQueriesMin(768px) {
-    height: 130rem;
-    width: 730px;
-  }
+	@include mediaQueriesMin(768px) {
+		height: 130rem;
+		width: 730px;
+	}
 
-  @include mediaQueriesMin(992px) {
-    height: 120rem;
-    width: 920px;
-  }
+	@include mediaQueriesMin(992px) {
+		height: 120rem;
+		width: 920px;
+	}
 }
 
 .register-form,
 .email-form,
-.sign-in-form, 
+.sign-in-form,
 .recover-form,
 .subscribe-form {
-  width: 100%;
+	width: 100%;
 
-  @include mediaQueriesMin(768px) {
-    width: $form-width-small;
-  }
+	@include mediaQueriesMin(768px) {
+		width: $form-width-small;
+	}
 
-  @include mediaQueriesMin(992px) {
-    width: $form-width;
-  }
+	@include mediaQueriesMin(992px) {
+		width: $form-width;
+	}
 }
 
-.register-form, 
-.email-form, 
+.register-form,
+.email-form,
 .sign-in-form,
 .recover-form {
-  margin-bottom: 4rem;
+	margin-bottom: 4rem;
 }
 
 .register-form,
 .email-form {
-  margin-right: 8rem;
-} 
+	margin-right: 8rem;
+}
 
 .sign-in-form {
-  @include mediaQueriesMin(768px) {
-    margin-bottom: 2rem;
-  }
+	@include mediaQueriesMin(768px) {
+		margin-bottom: 2rem;
+	}
 }
 
 .title {
-  color: $white;
-  font-family: $title;
-  font-size: $title-size;
-  font-weight: $font-normal-weight;
-  margin: 0 0 1.5rem 0 ;
-  text-align: center;
-  text-shadow: 2px 2px 0px rgba(43, 0, 0, 0.75)
+	color: $white;
+	font-family: $title;
+	font-size: $title-size;
+	font-weight: $font-normal-weight;
+	margin: 0 0 1.5rem 0;
+	text-align: center;
+	text-shadow: 2px 2px 0px rgba(43, 0, 0, 0.75);
 }
 
 .border-box {
-  background-color: rgba(0, 0, 0, 0.23);
-  border-radius: .4rem;
-  padding: 2em;
+	background-color: rgba(0, 0, 0, 0.23);
+	border-radius: 0.4rem;
+	padding: 2em;
 }
 
 .form-box {
-  background-color: $white;
-  border-radius: .3rem;
-  padding: 2em;
+	background-color: $white;
+	border-radius: 0.3rem;
+	padding: 2em;
 }
 
 .sign-in-form .form-box,
 .recover-form .form-box {
-  padding: 3em 2em;
+	padding: 3em 2em;
 }
 
 .subscribe-form .form-box {
-  padding: 3em 2em 2em;
+	padding: 3em 2em 2em;
 }
 
 .labels {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
 }
 
-.input-group, .input-group-select {
-  border: solid 1px $gray-input-box;
-  border-radius: .3rem;
-  display: flex;
-  height: 4em;
-  margin-bottom: 2em;
+.input-group,
+.input-group-select {
+	border: solid 1px $gray-input-box;
+	border-radius: 0.3rem;
+	display: flex;
+	height: 4em;
+	margin-bottom: 2em;
 }
 
 .input-group-select {
-  position: relative;
+	position: relative;
 }
 
 .input-group-select::after {
-  border-top: solid .8rem $gray-light;
-  border-bottom: solid .8rem transparent;
-  border-left: solid .8rem transparent;
-  border-right: solid .8rem transparent;
-  content: '';
-  height: 0;
-  pointer-events: none;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(calc(-50% + 4px));
-  width: 0;
+	border-top: solid 0.8rem $gray-light;
+	border-bottom: solid 0.8rem transparent;
+	border-left: solid 0.8rem transparent;
+	border-right: solid 0.8rem transparent;
+	content: '';
+	height: 0;
+	pointer-events: none;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(calc(-50% + 4px));
+	width: 0;
 }
 
 .img-wrapper {
-  position: relative;
-  width: 6em;
+	position: relative;
+	width: 6em;
 }
 
 .icons {
-  filter: invert(87%); //daje kolor $gray-light czyli #dedede
-  height: auto;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+	filter: invert(87%); //daje kolor $gray-light czyli #dedede
+	height: auto;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .vertical-separate-line {
-  border: solid 1px $gray-separate-line;
-  background-color: $gray-separate-line;
-  height: 30px;
-  margin: 3px 0 0 0;
-  width: 0px;
+	border: solid 1px $gray-separate-line;
+	background-color: $gray-separate-line;
+	height: 30px;
+	margin: 3px 0 0 0;
+	width: 0px;
 }
 
 .form-input {
-  border: none;
-  font-family: $main-font;
-  font-size: $font-size-base-small;
-  outline-color: $green-light;
-  padding-left: 2em;
-  width: 100%;
+	border: none;
+	font-family: $main-font;
+	font-size: $font-size-base-small;
+	outline-color: $green-light;
+	padding-left: 2em;
+	width: 100%;
 
-  @include mediaQueriesMin(480px) {
-    font-size: $font-size-base;
-  }
+	@include mediaQueriesMin(480px) {
+		font-size: $font-size-base;
+	}
 
-  @include mediaQueriesMin(768px) {
-    font-size: $font-size-base-small;
-  }
+	@include mediaQueriesMin(768px) {
+		font-size: $font-size-base-small;
+	}
 
-  @include mediaQueriesMin(992px) {
-    font-size: $font-size-base;
-  }
+	@include mediaQueriesMin(992px) {
+		font-size: $font-size-base;
+	}
 }
 
 .form-input::placeholder {
-  color: $gray;
-  font-family: $main-font;
-  font-size: $font-size-base-small;
+	color: $gray;
+	font-family: $main-font;
+	font-size: $font-size-base-small;
 
-  @include mediaQueriesMin(480px) {
-    font-size: $font-size-base;
-  }
+	@include mediaQueriesMin(480px) {
+		font-size: $font-size-base;
+	}
 
-  @include mediaQueriesMin(768px) {
-    font-size: $font-size-base-small;
-  }
+	@include mediaQueriesMin(768px) {
+		font-size: $font-size-base-small;
+	}
 
-  @include mediaQueriesMin(992px) {
-    font-size: $font-size-base;
-  }
+	@include mediaQueriesMin(992px) {
+		font-size: $font-size-base;
+	}
 }
 
 .select-location {
-  border: none;
-  color: $gray;
-  font-family: $main-font;
-  font-size: $font-size-base-small;
-  outline-color: $green-light;
-  padding-left: 2em;
-  width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+	border: none;
+	color: $gray;
+	font-family: $main-font;
+	font-size: $font-size-base-small;
+	outline-color: $green-light;
+	padding-left: 2em;
+	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 
-  @include mediaQueriesMin(480px) {
-    font-size: $font-size-base;
-  }
+	@include mediaQueriesMin(480px) {
+		font-size: $font-size-base;
+	}
 
-  @include mediaQueriesMin(768px) {
-    font-size: $font-size-base-small;
-  }
+	@include mediaQueriesMin(768px) {
+		font-size: $font-size-base-small;
+	}
 
-  @include mediaQueriesMin(992px) {
-    font-size: $font-size-base;
-  }
+	@include mediaQueriesMin(992px) {
+		font-size: $font-size-base;
+	}
 }
 
 .select-location option {
-  color: black;
+	color: black;
 }
 
 .wrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
-  @include mediaQueriesMin(480px) {
-    flex-direction: row;
-  }
+	@include mediaQueriesMin(480px) {
+		flex-direction: row;
+	}
 
-  @include mediaQueriesMin(768px) {
-    flex-direction: column;
-  }
+	@include mediaQueriesMin(768px) {
+		flex-direction: column;
+	}
 
-  @include mediaQueriesMin(992px) {
-    flex-direction: row;
-  }
+	@include mediaQueriesMin(992px) {
+		flex-direction: row;
+	}
 }
 
 .checkbox {
-  display: inline-flex;
-  margin-top: -1em;
-  padding-left: 4em;
-  position: relative;
+	display: inline-flex;
+	margin-top: -1em;
+	padding-left: 4em;
+	position: relative;
 }
 
 .checkbox-align-vertical {
-  margin: 2px 0 0 0;
+	margin: 2px 0 0 0;
 }
 
 .checkbox-input {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
 }
 
 .checkbox-outside {
-  border: 1px solid $gray-input-box;
-  border-radius: .4rem;
-  display: block;
-  height: 2.3rem;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  top: -3px;
-  width: 2.3rem;
+	border: 1px solid $gray-input-box;
+	border-radius: 0.4rem;
+	display: block;
+	height: 2.3rem;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: -3px;
+	width: 2.3rem;
 }
 
 .checkbox-inside {
-  border-radius: .3rem;
-  height: 1.3em;
-  left: 5px;
-  pointer-events: none;
-  position: absolute;
-  top: 2px;
-  width: 1.3em;
+	border-radius: 0.3rem;
+	height: 1.3em;
+	left: 5px;
+	pointer-events: none;
+	position: absolute;
+	top: 2px;
+	width: 1.3em;
 }
 
 .checkbox-description {
-  color: $gray;
-  font-family: $main-font;
-  font-size: $font-size-checkbox-small;
+	color: $gray;
+	font-family: $main-font;
+	font-size: $font-size-checkbox-small;
 
-  @include mediaQueriesMin(480px) {
-    font-size: $font-size-checkbox;
-  }
+	@include mediaQueriesMin(480px) {
+		font-size: $font-size-checkbox;
+	}
 
-  @include mediaQueriesMin(768px) {
-    font-size: $font-size-checkbox-small;
-  }
+	@include mediaQueriesMin(768px) {
+		font-size: $font-size-checkbox-small;
+	}
 
-  @include mediaQueriesMin(992px) {
-    font-size: $font-size-checkbox;
-  }
+	@include mediaQueriesMin(992px) {
+		font-size: $font-size-checkbox;
+	}
 }
 
 .checkbox-input:checked ~ .checkbox-inside {
-  animation-name: simple-anim;
-  animation-duration: .2s;
-  animation-fill-mode: forwards;
-  background: linear-gradient(to bottom, $green-light 0%, $green 100%);
-  border-color: $green-dark;
+	animation-name: simple-anim;
+	animation-duration: 0.2s;
+	animation-fill-mode: forwards;
+	background: linear-gradient(to bottom, $green-light 0%, $green 100%);
+	border-color: $green-dark;
 }
 
 .btn {
-  background: linear-gradient(to bottom, $green-light 0%, $green 100%);
-  border: solid 1px $green-dark;
-  border-radius: .3rem;
-  color: $white;
-  cursor: pointer;
-  font-family: $main-font;
-  font-weight: $font-normal-weight;
-  height: 4.8rem;
-  text-shadow: 1px 1px 0px rgba(43, 0, 0, 0.75);
+	background: linear-gradient(to bottom, $green-light 0%, $green 100%);
+	border: solid 1px $green-dark;
+	border-radius: 0.3rem;
+	color: $white;
+	cursor: pointer;
+	font-family: $main-font;
+	font-weight: $font-normal-weight;
+	height: 4.8rem;
+	text-shadow: 1px 1px 0px rgba(43, 0, 0, 0.75);
 }
 
 .sign-in-form .btn {
-  margin-top: 3rem;
+	margin-top: 3rem;
 
-  @include mediaQueriesMin(480px) {
-     margin-top: 0;
-  }
+	@include mediaQueriesMin(480px) {
+		margin-top: 0;
+	}
 
-  @include mediaQueriesMin(768px) {
-    margin-top: 3rem;
-  }
+	@include mediaQueriesMin(768px) {
+		margin-top: 3rem;
+	}
 
-  @include mediaQueriesMin(992px) {
-    margin-top: 0;
-  }
+	@include mediaQueriesMin(992px) {
+		margin-top: 0;
+	}
 }
 
-.recover-form .btn-less-opacity, .subscribe-form .btn-danger {
-  margin-top: 2rem;
+.recover-form .btn-less-opacity,
+.subscribe-form .btn-danger {
+	margin-top: 2rem;
 
-  @include mediaQueriesMin(480px) {
-     margin-top: 0;
-  }
+	@include mediaQueriesMin(480px) {
+		margin-top: 0;
+	}
 
-  @include mediaQueriesMin(768px) {
-    margin-top: 2rem;
-  }
+	@include mediaQueriesMin(768px) {
+		margin-top: 2rem;
+	}
 
-  @include mediaQueriesMin(992px) {
-    margin-top: 0;
-  }
+	@include mediaQueriesMin(992px) {
+		margin-top: 0;
+	}
 }
 
 .btn-large {
-  margin-top: 1.5rem;
-  width: 100%;
+	margin-top: 1.5rem;
+	width: 100%;
 }
 
 .btn-small {
-  height: 4rem;
-  width: $btn-small-width;
+	height: 4rem;
+	width: $btn-small-width;
 }
 
 .btn-font-large {
-  font-size: $font-size_btn-large;
+	font-size: $font-size_btn-large;
 }
 
 .btn-font-small {
-  font-size: $font-size_btn-small;
+	font-size: $font-size_btn-small;
 }
 
 .btn-less-opacity {
-  background: linear-gradient(to bottom, $green-light-less-opacity 0%, $green-less-opacity 100%);
-  border: solid 1px $green-dark-less-opacity;
+	background: linear-gradient(
+		to bottom,
+		$green-light-less-opacity 0%,
+		$green-less-opacity 100%
+	);
+	border: solid 1px $green-dark-less-opacity;
 }
 
 .btn-danger {
-  background: linear-gradient(to bottom, $red-light 0%, $red 100%);
+	background: linear-gradient(to bottom, $red-light 0%, $red 100%);
 }
 
 .message-textarea {
-  border: solid 1px $gray-input-box;
-  border-radius: .3rem;
-  font-family: $main-font;
-  font-size: $font-size-base;
-  margin-bottom: 2rem;
-  outline-color: $green-light;
-  padding: 1rem 1.5rem;
-  resize: vertical;
-  width: 100%;  
+	border: solid 1px $gray-input-box;
+	border-radius: 0.3rem;
+	font-family: $main-font;
+	font-size: $font-size-base;
+	margin-bottom: 2rem;
+	outline-color: $green-light;
+	padding: 1rem 1.5rem;
+	resize: vertical;
+	width: 100%;
 }
 
 .message-textarea::placeholder {
-  color: $gray; 
+	color: $gray;
 }
 
 .logo2 {
-  display: block;
-  margin: 0 auto;
-  mix-blend-mode: soft-light;
-  padding: 6rem 0 3.5rem;
-  max-width: 100%;
-  width: 353px;
+	display: block;
+	margin: 0 auto;
+	// mix-blend-mode: soft-light;
+	padding: 6rem 0 3.5rem;
+	max-width: 100%;
+	width: 353px;
 
-  @include mediaQueriesMin(768px) {
-    width: 250px;
-  }
+	@include mediaQueriesMin(768px) {
+		width: 250px;
+	}
 
-  @include mediaQueriesMin(992px) {
-    width: 353px;
-  }
+	@include mediaQueriesMin(992px) {
+		width: 353px;
+	}
 }
 
 .www {
-  display: block;
-  margin: 0 auto;
-  mix-blend-mode: soft-light;
-  max-width: 100%; 
+	display: block;
+	margin: 0 auto;
+	mix-blend-mode: soft-light;
+	max-width: 100%;
 }
 
 //ANIMATIONS
 
 @keyframes simple-anim {
-  0% {
-    height: 0;
-    width: 0;
-  }
-  100% {
-    height: 1.3em;
-    width: 1.3em;
-  }
+	0% {
+		height: 0;
+		width: 0;
+	}
+	100% {
+		height: 1.3em;
+		width: 1.3em;
+	}
 }

@@ -1,11 +1,460 @@
-@font-face {
-  font-family: "TitilliumText22L_light";
-  src: url("../fonts/TitilliumText22L_light.otf") format("opentype");
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+========================================================================== */
+/**
+* 1. Correct the line height in all browsers.
+* 2. Prevent adjustments of font size after orientation changes in
+*    IE on Windows Phone and in iOS.
+*/
+/* line 12, ../scss/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
-@font-face {
-  font-family: "TitilliumText22L_medium";
-  src: url("../fonts/TitilliumText22L_medium.otf") format("opentype");
+
+/* Sections
+========================================================================== */
+/**
+* Add the correct display in IE 9-.
+*/
+/* line 25, ../scss/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
 }
+
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+*/
+/* line 39, ../scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+========================================================================== */
+/**
+* Add the correct display in IE 9-.
+* 1. Add the correct display in IE.
+*/
+/* line 52, ../scss/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+* Add the correct margin in IE 8.
+*/
+/* line 62, ../scss/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+* 1. Add the correct box sizing in Firefox.
+* 2. Show the overflow in Edge and IE.
+*/
+/* line 71, ../scss/_normalize.scss */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+/* line 82, ../scss/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+========================================================================== */
+/**
+* 1. Remove the gray background on active links in IE 10.
+* 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+*/
+/* line 95, ../scss/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+* 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+*/
+/* line 105, ../scss/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+* Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+*/
+/* line 115, ../scss/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+*/
+/* line 124, ../scss/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+* 2. Correct the odd `em` font sizing in all browsers.
+*/
+/* line 134, ../scss/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+* Add the correct font style in Android 4.3-.
+*/
+/* line 145, ../scss/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+* Add the correct background and color in IE 9-.
+*/
+/* line 153, ../scss/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+* Add the correct font size in all browsers.
+*/
+/* line 162, ../scss/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+*/
+/* line 171, ../scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 179, ../scss/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 183, ../scss/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+========================================================================== */
+/**
+* Add the correct display in IE 9-.
+*/
+/* line 194, ../scss/_normalize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+* Add the correct display in iOS 4-7.
+*/
+/* line 203, ../scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+* Remove the border on images inside links in IE 10-.
+*/
+/* line 212, ../scss/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+* Hide the overflow in IE.
+*/
+/* line 220, ../scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+========================================================================== */
+/**
+* Remove the margin in Firefox and Safari.
+*/
+/* line 231, ../scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+/* line 244, ../scss/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+/* line 254, ../scss/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+* 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+*    controls in Android 4.
+* 2. Correct the inability to style clickable types in iOS and Safari.
+*/
+/* line 265, ../scss/_normalize.scss */
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+* Remove the inner border and padding in Firefox.
+*/
+/* line 276, ../scss/_normalize.scss */
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+* Restore the focus styles unset by the previous rule.
+*/
+/* line 288, ../scss/_normalize.scss */
+button:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+/* line 302, ../scss/_normalize.scss */
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+* 1. Add the correct display in IE 9-.
+* 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+/* line 316, ../scss/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+* Remove the default vertical scrollbar in IE.
+*/
+/* line 325, ../scss/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10-.
+* 2. Remove the padding in IE 10-.
+*/
+/* line 334, ../scss/_normalize.scss */
+[type='checkbox'],
+[type='radio'] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+/* line 344, ../scss/_normalize.scss */
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+/* line 354, ../scss/_normalize.scss */
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+* Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+*/
+/* line 363, ../scss/_normalize.scss */
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+/* line 373, ../scss/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+========================================================================== */
+/*
+* Add the correct display in IE 9-.
+* 1. Add the correct display in Edge, IE, and Firefox.
+*/
+/* line 386, ../scss/_normalize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+*/
+/* line 395, ../scss/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+========================================================================== */
+/**
+* Add the correct display in IE 9-.
+*/
+/* line 406, ../scss/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+* Add the correct display in IE.
+*/
+/* line 414, ../scss/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+========================================================================== */
+/**
+* Add the correct display in IE 10-.
+*/
+/* line 425, ../scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -18,10 +467,6 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
-}
-
-.background {
   background-image: url("../img/bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -29,10 +474,19 @@ body {
   padding: 0 1rem 5rem;
 }
 
+@font-face {
+  font-family: "TitilliumText22L_light";
+  src: url("../fonts/TitilliumText22L_light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TitilliumText22L_medium";
+  src: url("../fonts/TitilliumText22L_medium.otf") format("opentype");
+}
+
 .logo1 {
   display: block;
   margin: 0 auto;
-  mix-blend-mode: soft-light;
   padding-top: 5.5rem;
   max-width: 100%;
 }
@@ -50,12 +504,14 @@ body {
   margin: 2.5rem auto 0;
   width: 100%;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     height: 130rem;
     width: 730px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .container {
     height: 120rem;
@@ -70,6 +526,7 @@ body {
 .subscribe-form {
   width: 100%;
 }
+
 @media screen and (min-width: 768px) {
   .register-form,
   .email-form,
@@ -79,6 +536,7 @@ body {
     width: 32rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .register-form,
   .email-form,
@@ -119,13 +577,13 @@ body {
 
 .border-box {
   background-color: rgba(0, 0, 0, 0.23);
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   padding: 2em;
 }
 
 .form-box {
   background-color: #f4f4f4;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   padding: 2em;
 }
 
@@ -149,9 +607,10 @@ body {
   border: 0;
 }
 
-.input-group, .input-group-select {
+.input-group,
+.input-group-select {
   border: solid 1px #c6c6c6;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,9 +624,9 @@ body {
 
 .input-group-select::after {
   border-top: solid 0.8rem #dedede;
-  border-bottom: solid .8rem transparent;
-  border-left: solid .8rem transparent;
-  border-right: solid .8rem transparent;
+  border-bottom: solid 0.8rem transparent;
+  border-left: solid 0.8rem transparent;
+  border-right: solid 0.8rem transparent;
   content: '';
   height: 0;
   pointer-events: none;
@@ -211,16 +670,19 @@ body {
   padding-left: 2em;
   width: 100%;
 }
+
 @media screen and (min-width: 480px) {
   .form-input {
     font-size: 1.6rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .form-input {
     font-size: 1.2rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .form-input {
     font-size: 1.6rem;
@@ -250,6 +712,7 @@ body {
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
 }
+
 @media screen and (min-width: 480px) {
   .form-input::-webkit-input-placeholder {
     font-size: 1.6rem;
@@ -264,6 +727,7 @@ body {
     font-size: 1.6rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .form-input::-webkit-input-placeholder {
     font-size: 1.2rem;
@@ -278,6 +742,7 @@ body {
     font-size: 1.2rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .form-input::-webkit-input-placeholder {
     font-size: 1.6rem;
@@ -304,16 +769,19 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+
 @media screen and (min-width: 480px) {
   .select-location {
     font-size: 1.6rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .select-location {
     font-size: 1.2rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .select-location {
     font-size: 1.6rem;
@@ -339,6 +807,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 @media screen and (min-width: 480px) {
   .wrapper {
     -webkit-box-orient: horizontal;
@@ -347,6 +816,7 @@ body {
             flex-direction: row;
   }
 }
+
 @media screen and (min-width: 768px) {
   .wrapper {
     -webkit-box-orient: vertical;
@@ -355,6 +825,7 @@ body {
             flex-direction: column;
   }
 }
+
 @media screen and (min-width: 992px) {
   .wrapper {
     -webkit-box-orient: horizontal;
@@ -385,7 +856,7 @@ body {
 
 .checkbox-outside {
   border: 1px solid #c6c6c6;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   display: block;
   height: 2.3rem;
   left: 0;
@@ -396,7 +867,7 @@ body {
 }
 
 .checkbox-inside {
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   height: 1.3em;
   left: 5px;
   pointer-events: none;
@@ -410,16 +881,19 @@ body {
   font-family: "TitilliumText22L_light";
   font-size: 1.3rem;
 }
+
 @media screen and (min-width: 480px) {
   .checkbox-description {
     font-size: 1.735rem;
   }
 }
+
 @media screen and (min-width: 768px) {
   .checkbox-description {
     font-size: 1.3rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .checkbox-description {
     font-size: 1.735rem;
@@ -429,8 +903,8 @@ body {
 .checkbox-input:checked ~ .checkbox-inside {
   -webkit-animation-name: simple-anim;
           animation-name: simple-anim;
-  -webkit-animation-duration: .2s;
-          animation-duration: .2s;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   background: -webkit-gradient(linear, left top, left bottom, from(#addc54), to(#7ec31f));
@@ -442,7 +916,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#addc54), to(#7ec31f));
   background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
   border: solid 1px #3b9a00;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   color: #f4f4f4;
   cursor: pointer;
   font-family: "TitilliumText22L_light";
@@ -454,37 +928,47 @@ body {
 .sign-in-form .btn {
   margin-top: 3rem;
 }
+
 @media screen and (min-width: 480px) {
   .sign-in-form .btn {
     margin-top: 0;
   }
 }
+
 @media screen and (min-width: 768px) {
   .sign-in-form .btn {
     margin-top: 3rem;
   }
 }
+
 @media screen and (min-width: 992px) {
   .sign-in-form .btn {
     margin-top: 0;
   }
 }
 
-.recover-form .btn-less-opacity, .subscribe-form .btn-danger {
+.recover-form .btn-less-opacity,
+.subscribe-form .btn-danger {
   margin-top: 2rem;
 }
+
 @media screen and (min-width: 480px) {
-  .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
+  .recover-form .btn-less-opacity,
+  .subscribe-form .btn-danger {
     margin-top: 0;
   }
 }
+
 @media screen and (min-width: 768px) {
-  .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
+  .recover-form .btn-less-opacity,
+  .subscribe-form .btn-danger {
     margin-top: 2rem;
   }
 }
+
 @media screen and (min-width: 992px) {
-  .recover-form .btn-less-opacity, .subscribe-form .btn-danger {
+  .recover-form .btn-less-opacity,
+  .subscribe-form .btn-danger {
     margin-top: 0;
   }
 }
@@ -520,7 +1004,7 @@ body {
 
 .message-textarea {
   border: solid 1px #c6c6c6;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   font-family: "TitilliumText22L_light";
   font-size: 1.6rem;
   margin-bottom: 2rem;
@@ -549,16 +1033,17 @@ body {
 .logo2 {
   display: block;
   margin: 0 auto;
-  mix-blend-mode: soft-light;
   padding: 6rem 0 3.5rem;
   max-width: 100%;
   width: 353px;
 }
+
 @media screen and (min-width: 768px) {
   .logo2 {
     width: 250px;
   }
 }
+
 @media screen and (min-width: 992px) {
   .logo2 {
     width: 353px;
@@ -593,3 +1078,4 @@ body {
     width: 1.3em;
   }
 }
+/*# sourceMappingURL=main.css.map */
