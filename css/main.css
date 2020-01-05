@@ -677,6 +677,21 @@ body {
   width: 0px;
 }
 
+.register-form__label,
+.email-form__label,
+.sign-in-form__label,
+.recover-form__label,
+.subscribe-form__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 @media screen and (min-width: 768px) {
   .register-form,
   .email-form,
@@ -695,17 +710,6 @@ body {
   .subscribe-form {
     width: 42rem;
   }
-}
-
-.labels {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
 }
 
 .form-input {

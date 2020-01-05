@@ -77,6 +77,17 @@
 		width: 0px;
 	}
 
+	&__label {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
+
 	@include mediaQueriesMin(768px) {
 		width: $form-width-small;
 	}
@@ -112,17 +123,6 @@
 // .subscribe-form .form-box {
 // 	padding: 3em 2em 2em;
 // }
-
-.labels {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	padding: 0;
-	margin: -1px;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	border: 0;
-}
 
 .form-input {
 	border: none;
