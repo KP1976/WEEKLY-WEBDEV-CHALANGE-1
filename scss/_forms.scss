@@ -155,6 +155,25 @@
 		}
 	}
 
+	&__wrapper {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@include mediaQueriesMin(480px) {
+			flex-direction: row;
+		}
+
+		@include mediaQueriesMin(768px) {
+			flex-direction: column;
+		}
+
+		@include mediaQueriesMin(992px) {
+			flex-direction: row;
+		}
+	}
+
 	@include mediaQueriesMin(768px) {
 		width: $form-width-small;
 	}
@@ -190,25 +209,6 @@
 // .subscribe-form .form-box {
 // 	padding: 3em 2em 2em;
 // }
-
-.wrapper {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-	@include mediaQueriesMin(480px) {
-		flex-direction: row;
-	}
-
-	@include mediaQueriesMin(768px) {
-		flex-direction: column;
-	}
-
-	@include mediaQueriesMin(992px) {
-		flex-direction: row;
-	}
-}
 
 .checkbox {
 	display: inline-flex;
