@@ -868,6 +868,60 @@ body {
   }
 }
 
+.register-form__select-location,
+.email-form__select-location,
+.sign-in-form__select-location,
+.recover-form__select-location,
+.subscribe-form__select-location {
+  border: none;
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.2rem;
+  outline-color: #addc54;
+  padding-left: 2em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.register-form__select-location option,
+.email-form__select-location option,
+.sign-in-form__select-location option,
+.recover-form__select-location option,
+.subscribe-form__select-location option {
+  color: black;
+}
+
+@media screen and (min-width: 480px) {
+  .register-form__select-location,
+  .email-form__select-location,
+  .sign-in-form__select-location,
+  .recover-form__select-location,
+  .subscribe-form__select-location {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register-form__select-location,
+  .email-form__select-location,
+  .sign-in-form__select-location,
+  .recover-form__select-location,
+  .subscribe-form__select-location {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .register-form__select-location,
+  .email-form__select-location,
+  .sign-in-form__select-location,
+  .recover-form__select-location,
+  .subscribe-form__select-location {
+    font-size: 1.6rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .register-form,
   .email-form,
@@ -886,40 +940,6 @@ body {
   .subscribe-form {
     width: 42rem;
   }
-}
-
-.select-location {
-  border: none;
-  color: #afafaf;
-  font-family: "TitilliumText22L_light";
-  font-size: 1.2rem;
-  outline-color: #addc54;
-  padding-left: 2em;
-  width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-@media screen and (min-width: 480px) {
-  .select-location {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .select-location {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .select-location {
-    font-size: 1.6rem;
-  }
-}
-
-.select-location option {
-  color: black;
 }
 
 .wrapper {
