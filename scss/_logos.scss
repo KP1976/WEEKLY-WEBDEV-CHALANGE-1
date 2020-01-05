@@ -1,0 +1,25 @@
+.logo1 {
+	display: block;
+	margin: 0 auto;
+	// mix-blend-mode: soft-light;
+	padding-top: 2.5rem;
+	max-width: 42.9rem;
+	width: 90%;
+}
+
+.logo2 {
+	display: block;
+	margin: 0 auto;
+	// mix-blend-mode: soft-light;
+	padding: 6rem 0 0;
+	max-width: 100%;
+	width: 353px;
+
+	@include mediaQueriesMin(768px) {
+		width: 250px;
+	}
+
+	@include mediaQueriesMin(992px) {
+		width: 353px;
+	}
+}

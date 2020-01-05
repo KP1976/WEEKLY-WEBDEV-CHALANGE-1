@@ -467,11 +467,12 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background-image: url("../img/bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 1rem 5rem;
+  padding: 0 1rem 2.5rem;
 }
 
 @font-face {
@@ -487,20 +488,34 @@ body {
 .logo1 {
   display: block;
   margin: 0 auto;
-  padding-top: 5.5rem;
+  padding-top: 2.5rem;
+  max-width: 42.9rem;
+  width: 90%;
+}
+
+.logo2 {
+  display: block;
+  margin: 0 auto;
+  padding: 6rem 0 0;
   max-width: 100%;
+  width: 353px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo2 {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logo2 {
+    width: 353px;
+  }
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
   margin: 2.5rem auto 0;
   width: 100%;
 }
@@ -1028,26 +1043,6 @@ body {
 
 .message-textarea::placeholder {
   color: #afafaf;
-}
-
-.logo2 {
-  display: block;
-  margin: 0 auto;
-  padding: 6rem 0 3.5rem;
-  max-width: 100%;
-  width: 353px;
-}
-
-@media screen and (min-width: 768px) {
-  .logo2 {
-    width: 250px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .logo2 {
-    width: 353px;
-  }
 }
 
 .www {
