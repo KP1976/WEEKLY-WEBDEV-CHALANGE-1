@@ -69,6 +69,14 @@
 		transform: translate(-50%, -50%);
 	}
 
+	&__vertical-separate-line {
+		border: solid 1px $gray-separate-line;
+		background-color: $gray-separate-line;
+		height: 30px;
+		margin: 3px 0 0 0;
+		width: 0px;
+	}
+
 	@include mediaQueriesMin(768px) {
 		width: $form-width-small;
 	}
@@ -114,14 +122,6 @@
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
 	border: 0;
-}
-
-.vertical-separate-line {
-	border: solid 1px $gray-separate-line;
-	background-color: $gray-separate-line;
-	height: 30px;
-	margin: 3px 0 0 0;
-	width: 0px;
 }
 
 .form-input {

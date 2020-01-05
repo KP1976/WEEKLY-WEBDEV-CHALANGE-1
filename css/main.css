@@ -665,6 +665,18 @@ body {
           transform: translate(-50%, -50%);
 }
 
+.register-form__vertical-separate-line,
+.email-form__vertical-separate-line,
+.sign-in-form__vertical-separate-line,
+.recover-form__vertical-separate-line,
+.subscribe-form__vertical-separate-line {
+  border: solid 1px #e4e4e4;
+  background-color: #e4e4e4;
+  height: 30px;
+  margin: 3px 0 0 0;
+  width: 0px;
+}
+
 @media screen and (min-width: 768px) {
   .register-form,
   .email-form,
@@ -694,14 +706,6 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-}
-
-.vertical-separate-line {
-  border: solid 1px #e4e4e4;
-  background-color: #e4e4e4;
-  height: 30px;
-  margin: 3px 0 0 0;
-  width: 0px;
 }
 
 .form-input {
