@@ -1,7 +1,10 @@
-@import 'variables';
-@import 'reboot';
+@import 'utilities/variables';
+@import 'utilities/reboot';
+@import 'utilities/mixins';
+@import 'utilities/fonts';
+
 @import 'html-body';
-@import 'mixins';
-@import 'fonts';
+@import 'container';
 @import 'logos';
+@import 'forms';
 @import 'page-styles';

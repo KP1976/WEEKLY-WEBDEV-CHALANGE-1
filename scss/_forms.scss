@@ -1,0 +1,33 @@
+.register-form,
+.email-form,
+.sign-in-form,
+.recover-form,
+.subscribe-form {
+	width: 100%;
+
+	@include mediaQueriesMin(768px) {
+		width: $form-width-small;
+	}
+
+	@include mediaQueriesMin(992px) {
+		width: $form-width;
+	}
+}
+
+.register-form,
+.email-form,
+.sign-in-form,
+.recover-form {
+	margin-bottom: 4rem;
+}
+
+.register-form,
+.email-form {
+	margin-right: 8rem;
+}
+
+.sign-in-form {
+	@include mediaQueriesMin(768px) {
+		margin-bottom: 2rem;
+	}
+}
