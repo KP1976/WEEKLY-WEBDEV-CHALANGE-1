@@ -88,6 +88,45 @@
 		border: 0;
 	}
 
+	&__input {
+		border: none;
+		font-family: $main-font;
+		font-size: $font-size-base-small;
+		outline-color: $green-light;
+		padding-left: 2em;
+		width: 100%;
+
+		&::placeholder {
+			color: $gray;
+			font-family: $main-font;
+			font-size: $font-size-base-small;
+
+			@include mediaQueriesMin(480px) {
+				font-size: $font-size-base;
+			}
+
+			@include mediaQueriesMin(768px) {
+				font-size: $font-size-base-small;
+			}
+
+			@include mediaQueriesMin(992px) {
+				font-size: $font-size-base;
+			}
+		}
+
+		@include mediaQueriesMin(480px) {
+			font-size: $font-size-base;
+		}
+
+		@include mediaQueriesMin(768px) {
+			font-size: $font-size-base-small;
+		}
+
+		@include mediaQueriesMin(992px) {
+			font-size: $font-size-base;
+		}
+	}
+
 	@include mediaQueriesMin(768px) {
 		width: $form-width-small;
 	}
@@ -123,45 +162,6 @@
 // .subscribe-form .form-box {
 // 	padding: 3em 2em 2em;
 // }
-
-.form-input {
-	border: none;
-	font-family: $main-font;
-	font-size: $font-size-base-small;
-	outline-color: $green-light;
-	padding-left: 2em;
-	width: 100%;
-
-	@include mediaQueriesMin(480px) {
-		font-size: $font-size-base;
-	}
-
-	@include mediaQueriesMin(768px) {
-		font-size: $font-size-base-small;
-	}
-
-	@include mediaQueriesMin(992px) {
-		font-size: $font-size-base;
-	}
-}
-
-.form-input::placeholder {
-	color: $gray;
-	font-family: $main-font;
-	font-size: $font-size-base-small;
-
-	@include mediaQueriesMin(480px) {
-		font-size: $font-size-base;
-	}
-
-	@include mediaQueriesMin(768px) {
-		font-size: $font-size-base-small;
-	}
-
-	@include mediaQueriesMin(992px) {
-		font-size: $font-size-base;
-	}
-}
 
 .select-location {
 	border: none;

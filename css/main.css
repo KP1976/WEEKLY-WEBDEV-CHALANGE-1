@@ -692,6 +692,182 @@ body {
   border: 0;
 }
 
+.register-form__input,
+.email-form__input,
+.sign-in-form__input,
+.recover-form__input,
+.subscribe-form__input {
+  border: none;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.2rem;
+  outline-color: #addc54;
+  padding-left: 2em;
+  width: 100%;
+}
+
+.register-form__input::-webkit-input-placeholder,
+.email-form__input::-webkit-input-placeholder,
+.sign-in-form__input::-webkit-input-placeholder,
+.recover-form__input::-webkit-input-placeholder,
+.subscribe-form__input::-webkit-input-placeholder {
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.2rem;
+}
+
+.register-form__input:-ms-input-placeholder,
+.email-form__input:-ms-input-placeholder,
+.sign-in-form__input:-ms-input-placeholder,
+.recover-form__input:-ms-input-placeholder,
+.subscribe-form__input:-ms-input-placeholder {
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.2rem;
+}
+
+.register-form__input::-ms-input-placeholder,
+.email-form__input::-ms-input-placeholder,
+.sign-in-form__input::-ms-input-placeholder,
+.recover-form__input::-ms-input-placeholder,
+.subscribe-form__input::-ms-input-placeholder {
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.2rem;
+}
+
+.register-form__input::placeholder,
+.email-form__input::placeholder,
+.sign-in-form__input::placeholder,
+.recover-form__input::placeholder,
+.subscribe-form__input::placeholder {
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 480px) {
+  .register-form__input::-webkit-input-placeholder,
+  .email-form__input::-webkit-input-placeholder,
+  .sign-in-form__input::-webkit-input-placeholder,
+  .recover-form__input::-webkit-input-placeholder,
+  .subscribe-form__input::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .register-form__input:-ms-input-placeholder,
+  .email-form__input:-ms-input-placeholder,
+  .sign-in-form__input:-ms-input-placeholder,
+  .recover-form__input:-ms-input-placeholder,
+  .subscribe-form__input:-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .register-form__input::-ms-input-placeholder,
+  .email-form__input::-ms-input-placeholder,
+  .sign-in-form__input::-ms-input-placeholder,
+  .recover-form__input::-ms-input-placeholder,
+  .subscribe-form__input::-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .register-form__input::placeholder,
+  .email-form__input::placeholder,
+  .sign-in-form__input::placeholder,
+  .recover-form__input::placeholder,
+  .subscribe-form__input::placeholder {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register-form__input::-webkit-input-placeholder,
+  .email-form__input::-webkit-input-placeholder,
+  .sign-in-form__input::-webkit-input-placeholder,
+  .recover-form__input::-webkit-input-placeholder,
+  .subscribe-form__input::-webkit-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .register-form__input:-ms-input-placeholder,
+  .email-form__input:-ms-input-placeholder,
+  .sign-in-form__input:-ms-input-placeholder,
+  .recover-form__input:-ms-input-placeholder,
+  .subscribe-form__input:-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .register-form__input::-ms-input-placeholder,
+  .email-form__input::-ms-input-placeholder,
+  .sign-in-form__input::-ms-input-placeholder,
+  .recover-form__input::-ms-input-placeholder,
+  .subscribe-form__input::-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .register-form__input::placeholder,
+  .email-form__input::placeholder,
+  .sign-in-form__input::placeholder,
+  .recover-form__input::placeholder,
+  .subscribe-form__input::placeholder {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .register-form__input::-webkit-input-placeholder,
+  .email-form__input::-webkit-input-placeholder,
+  .sign-in-form__input::-webkit-input-placeholder,
+  .recover-form__input::-webkit-input-placeholder,
+  .subscribe-form__input::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .register-form__input:-ms-input-placeholder,
+  .email-form__input:-ms-input-placeholder,
+  .sign-in-form__input:-ms-input-placeholder,
+  .recover-form__input:-ms-input-placeholder,
+  .subscribe-form__input:-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .register-form__input::-ms-input-placeholder,
+  .email-form__input::-ms-input-placeholder,
+  .sign-in-form__input::-ms-input-placeholder,
+  .recover-form__input::-ms-input-placeholder,
+  .subscribe-form__input::-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .register-form__input::placeholder,
+  .email-form__input::placeholder,
+  .sign-in-form__input::placeholder,
+  .recover-form__input::placeholder,
+  .subscribe-form__input::placeholder {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .register-form__input,
+  .email-form__input,
+  .sign-in-form__input,
+  .recover-form__input,
+  .subscribe-form__input {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register-form__input,
+  .email-form__input,
+  .sign-in-form__input,
+  .recover-form__input,
+  .subscribe-form__input {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .register-form__input,
+  .email-form__input,
+  .sign-in-form__input,
+  .recover-form__input,
+  .subscribe-form__input {
+    font-size: 1.6rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .register-form,
   .email-form,
@@ -709,102 +885,6 @@ body {
   .recover-form,
   .subscribe-form {
     width: 42rem;
-  }
-}
-
-.form-input {
-  border: none;
-  font-family: "TitilliumText22L_light";
-  font-size: 1.2rem;
-  outline-color: #addc54;
-  padding-left: 2em;
-  width: 100%;
-}
-
-@media screen and (min-width: 480px) {
-  .form-input {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .form-input {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .form-input {
-    font-size: 1.6rem;
-  }
-}
-
-.form-input::-webkit-input-placeholder {
-  color: #afafaf;
-  font-family: "TitilliumText22L_light";
-  font-size: 1.2rem;
-}
-
-.form-input:-ms-input-placeholder {
-  color: #afafaf;
-  font-family: "TitilliumText22L_light";
-  font-size: 1.2rem;
-}
-
-.form-input::-ms-input-placeholder {
-  color: #afafaf;
-  font-family: "TitilliumText22L_light";
-  font-size: 1.2rem;
-}
-
-.form-input::placeholder {
-  color: #afafaf;
-  font-family: "TitilliumText22L_light";
-  font-size: 1.2rem;
-}
-
-@media screen and (min-width: 480px) {
-  .form-input::-webkit-input-placeholder {
-    font-size: 1.6rem;
-  }
-  .form-input:-ms-input-placeholder {
-    font-size: 1.6rem;
-  }
-  .form-input::-ms-input-placeholder {
-    font-size: 1.6rem;
-  }
-  .form-input::placeholder {
-    font-size: 1.6rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .form-input::-webkit-input-placeholder {
-    font-size: 1.2rem;
-  }
-  .form-input:-ms-input-placeholder {
-    font-size: 1.2rem;
-  }
-  .form-input::-ms-input-placeholder {
-    font-size: 1.2rem;
-  }
-  .form-input::placeholder {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .form-input::-webkit-input-placeholder {
-    font-size: 1.6rem;
-  }
-  .form-input:-ms-input-placeholder {
-    font-size: 1.6rem;
-  }
-  .form-input::-ms-input-placeholder {
-    font-size: 1.6rem;
-  }
-  .form-input::placeholder {
-    font-size: 1.6rem;
   }
 }
 
