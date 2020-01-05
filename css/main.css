@@ -650,6 +650,21 @@ body {
   width: 6em;
 }
 
+.register-form__icons,
+.email-form__icons,
+.sign-in-form__icons,
+.recover-form__icons,
+.subscribe-form__icons {
+  -webkit-filter: invert(87%);
+          filter: invert(87%);
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 768px) {
   .register-form,
   .email-form,
@@ -679,17 +694,6 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-}
-
-.icons {
-  -webkit-filter: invert(87%);
-          filter: invert(87%);
-  height: auto;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .vertical-separate-line {
