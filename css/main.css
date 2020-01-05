@@ -580,7 +580,11 @@ body {
   }
 }
 
-.title {
+.register-form__title,
+.email-form__title,
+.sign-in-form__title,
+.recover-form__title,
+.subscribe-form__title {
   color: #f4f4f4;
   font-family: "TitilliumText22L_medium";
   font-size: 3.2rem;
