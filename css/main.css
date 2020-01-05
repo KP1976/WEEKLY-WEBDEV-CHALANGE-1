@@ -981,6 +981,143 @@ body {
   }
 }
 
+.register-form__checkbox,
+.email-form__checkbox,
+.sign-in-form__checkbox,
+.recover-form__checkbox,
+.subscribe-form__checkbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: -1em;
+  padding-left: 4em;
+  position: relative;
+}
+
+.register-form__checkbox--align-vertical,
+.email-form__checkbox--align-vertical,
+.sign-in-form__checkbox--align-vertical,
+.recover-form__checkbox--align-vertical,
+.subscribe-form__checkbox--align-vertical {
+  margin: 2px 0 0 0;
+}
+
+.register-form__checkbox-input,
+.email-form__checkbox-input,
+.sign-in-form__checkbox-input,
+.recover-form__checkbox-input,
+.subscribe-form__checkbox-input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.register-form__checkbox-input:checked ~ .register-form__checkbox-inside,
+.register-form__checkbox-input:checked ~ .email-form__checkbox-inside,
+.register-form__checkbox-input:checked ~ .sign-in-form__checkbox-inside,
+.register-form__checkbox-input:checked ~ .recover-form__checkbox-inside,
+.register-form__checkbox-input:checked ~ .subscribe-form__checkbox-inside,
+.email-form__checkbox-input:checked ~ .register-form__checkbox-inside,
+.email-form__checkbox-input:checked ~ .email-form__checkbox-inside,
+.email-form__checkbox-input:checked ~ .sign-in-form__checkbox-inside,
+.email-form__checkbox-input:checked ~ .recover-form__checkbox-inside,
+.email-form__checkbox-input:checked ~ .subscribe-form__checkbox-inside,
+.sign-in-form__checkbox-input:checked ~ .register-form__checkbox-inside,
+.sign-in-form__checkbox-input:checked ~ .email-form__checkbox-inside,
+.sign-in-form__checkbox-input:checked ~ .sign-in-form__checkbox-inside,
+.sign-in-form__checkbox-input:checked ~ .recover-form__checkbox-inside,
+.sign-in-form__checkbox-input:checked ~ .subscribe-form__checkbox-inside,
+.recover-form__checkbox-input:checked ~ .register-form__checkbox-inside,
+.recover-form__checkbox-input:checked ~ .email-form__checkbox-inside,
+.recover-form__checkbox-input:checked ~ .sign-in-form__checkbox-inside,
+.recover-form__checkbox-input:checked ~ .recover-form__checkbox-inside,
+.recover-form__checkbox-input:checked ~ .subscribe-form__checkbox-inside,
+.subscribe-form__checkbox-input:checked ~ .register-form__checkbox-inside,
+.subscribe-form__checkbox-input:checked ~ .email-form__checkbox-inside,
+.subscribe-form__checkbox-input:checked ~ .sign-in-form__checkbox-inside,
+.subscribe-form__checkbox-input:checked ~ .recover-form__checkbox-inside,
+.subscribe-form__checkbox-input:checked ~ .subscribe-form__checkbox-inside {
+  -webkit-animation-name: simple-anim;
+          animation-name: simple-anim;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  background: -webkit-gradient(linear, left top, left bottom, from(#addc54), to(#7ec31f));
+  background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
+  border-color: #3b9a00;
+}
+
+.register-form__checkbox-outside,
+.email-form__checkbox-outside,
+.sign-in-form__checkbox-outside,
+.recover-form__checkbox-outside,
+.subscribe-form__checkbox-outside {
+  border: 1px solid #c6c6c6;
+  border-radius: 0.4rem;
+  display: block;
+  height: 2.3rem;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: -3px;
+  width: 2.3rem;
+}
+
+.register-form__checkbox-inside,
+.email-form__checkbox-inside,
+.sign-in-form__checkbox-inside,
+.recover-form__checkbox-inside,
+.subscribe-form__checkbox-inside {
+  border-radius: 0.3rem;
+  height: 1.3em;
+  left: 5px;
+  pointer-events: none;
+  position: absolute;
+  top: 2px;
+  width: 1.3em;
+}
+
+.register-form__checkbox-description,
+.email-form__checkbox-description,
+.sign-in-form__checkbox-description,
+.recover-form__checkbox-description,
+.subscribe-form__checkbox-description {
+  color: #afafaf;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 480px) {
+  .register-form__checkbox-description,
+  .email-form__checkbox-description,
+  .sign-in-form__checkbox-description,
+  .recover-form__checkbox-description,
+  .subscribe-form__checkbox-description {
+    font-size: 1.735rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register-form__checkbox-description,
+  .email-form__checkbox-description,
+  .sign-in-form__checkbox-description,
+  .recover-form__checkbox-description,
+  .subscribe-form__checkbox-description {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .register-form__checkbox-description,
+  .email-form__checkbox-description,
+  .sign-in-form__checkbox-description,
+  .recover-form__checkbox-description,
+  .subscribe-form__checkbox-description {
+    font-size: 1.735rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .register-form,
   .email-form,
@@ -999,83 +1136,6 @@ body {
   .subscribe-form {
     width: 42rem;
   }
-}
-
-.checkbox {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-top: -1em;
-  padding-left: 4em;
-  position: relative;
-}
-
-.checkbox-align-vertical {
-  margin: 2px 0 0 0;
-}
-
-.checkbox-input {
-  opacity: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-.checkbox-outside {
-  border: 1px solid #c6c6c6;
-  border-radius: 0.4rem;
-  display: block;
-  height: 2.3rem;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  top: -3px;
-  width: 2.3rem;
-}
-
-.checkbox-inside {
-  border-radius: 0.3rem;
-  height: 1.3em;
-  left: 5px;
-  pointer-events: none;
-  position: absolute;
-  top: 2px;
-  width: 1.3em;
-}
-
-.checkbox-description {
-  color: #afafaf;
-  font-family: "TitilliumText22L_light";
-  font-size: 1.3rem;
-}
-
-@media screen and (min-width: 480px) {
-  .checkbox-description {
-    font-size: 1.735rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .checkbox-description {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .checkbox-description {
-    font-size: 1.735rem;
-  }
-}
-
-.checkbox-input:checked ~ .checkbox-inside {
-  -webkit-animation-name: simple-anim;
-          animation-name: simple-anim;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  background: -webkit-gradient(linear, left top, left bottom, from(#addc54), to(#7ec31f));
-  background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
-  border-color: #3b9a00;
 }
 
 .btn {

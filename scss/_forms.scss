@@ -174,6 +174,75 @@
 		}
 	}
 
+	&__checkbox {
+		display: inline-flex;
+		margin-top: -1em;
+		padding-left: 4em;
+		position: relative;
+
+		&--align-vertical {
+			margin: 2px 0 0 0;
+		}
+	}
+
+	&__checkbox-input {
+		opacity: 0;
+		position: absolute;
+		z-index: -1;
+
+		&:checked ~ .register-form__checkbox-inside,
+		&:checked ~ .email-form__checkbox-inside,
+		&:checked ~ .sign-in-form__checkbox-inside,
+		&:checked ~ .recover-form__checkbox-inside,
+		&:checked ~ .subscribe-form__checkbox-inside {
+			animation-name: simple-anim;
+			animation-duration: 0.2s;
+			animation-fill-mode: forwards;
+			background: linear-gradient(to bottom, $green-light 0%, $green 100%);
+			border-color: $green-dark;
+		}
+	}
+
+	&__checkbox-outside {
+		border: 1px solid $gray-input-box;
+		border-radius: 0.4rem;
+		display: block;
+		height: 2.3rem;
+		left: 0;
+		pointer-events: none;
+		position: absolute;
+		top: -3px;
+		width: 2.3rem;
+	}
+
+	&__checkbox-inside {
+		border-radius: 0.3rem;
+		height: 1.3em;
+		left: 5px;
+		pointer-events: none;
+		position: absolute;
+		top: 2px;
+		width: 1.3em;
+	}
+
+	&__checkbox-description {
+		color: $gray;
+		font-family: $main-font;
+		font-size: $font-size-checkbox-small;
+
+		@include mediaQueriesMin(480px) {
+			font-size: $font-size-checkbox;
+		}
+
+		@include mediaQueriesMin(768px) {
+			font-size: $font-size-checkbox-small;
+		}
+
+		@include mediaQueriesMin(992px) {
+			font-size: $font-size-checkbox;
+		}
+	}
+
 	@include mediaQueriesMin(768px) {
 		width: $form-width-small;
 	}
@@ -209,71 +278,6 @@
 // .subscribe-form .form-box {
 // 	padding: 3em 2em 2em;
 // }
-
-.checkbox {
-	display: inline-flex;
-	margin-top: -1em;
-	padding-left: 4em;
-	position: relative;
-}
-
-.checkbox-align-vertical {
-	margin: 2px 0 0 0;
-}
-
-.checkbox-input {
-	opacity: 0;
-	position: absolute;
-	z-index: -1;
-}
-
-.checkbox-outside {
-	border: 1px solid $gray-input-box;
-	border-radius: 0.4rem;
-	display: block;
-	height: 2.3rem;
-	left: 0;
-	pointer-events: none;
-	position: absolute;
-	top: -3px;
-	width: 2.3rem;
-}
-
-.checkbox-inside {
-	border-radius: 0.3rem;
-	height: 1.3em;
-	left: 5px;
-	pointer-events: none;
-	position: absolute;
-	top: 2px;
-	width: 1.3em;
-}
-
-.checkbox-description {
-	color: $gray;
-	font-family: $main-font;
-	font-size: $font-size-checkbox-small;
-
-	@include mediaQueriesMin(480px) {
-		font-size: $font-size-checkbox;
-	}
-
-	@include mediaQueriesMin(768px) {
-		font-size: $font-size-checkbox-small;
-	}
-
-	@include mediaQueriesMin(992px) {
-		font-size: $font-size-checkbox;
-	}
-}
-
-.checkbox-input:checked ~ .checkbox-inside {
-	animation-name: simple-anim;
-	animation-duration: 0.2s;
-	animation-fill-mode: forwards;
-	background: linear-gradient(to bottom, $green-light 0%, $green 100%);
-	border-color: $green-dark;
-}
 
 .btn {
 	background: linear-gradient(to bottom, $green-light 0%, $green 100%);
