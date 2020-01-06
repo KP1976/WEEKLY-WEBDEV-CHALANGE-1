@@ -927,9 +927,6 @@ body {
 .sign-in-form__wrapper,
 .recover-form__wrapper,
 .subscribe-form__wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1138,96 +1135,6 @@ body {
   }
 }
 
-.btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#addc54), to(#7ec31f));
-  background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
-  border: solid 1px #3b9a00;
-  border-radius: 0.3rem;
-  color: #f4f4f4;
-  cursor: pointer;
-  font-family: "TitilliumText22L_light";
-  font-weight: 400;
-  height: 4.8rem;
-  text-shadow: 1px 1px 0px rgba(43, 0, 0, 0.75);
-}
-
-.sign-in-form .btn {
-  margin-top: 3rem;
-}
-
-@media screen and (min-width: 480px) {
-  .sign-in-form .btn {
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .sign-in-form .btn {
-    margin-top: 3rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .sign-in-form .btn {
-    margin-top: 0;
-  }
-}
-
-.recover-form .btn-less-opacity,
-.subscribe-form .btn-danger {
-  margin-top: 2rem;
-}
-
-@media screen and (min-width: 480px) {
-  .recover-form .btn-less-opacity,
-  .subscribe-form .btn-danger {
-    margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .recover-form .btn-less-opacity,
-  .subscribe-form .btn-danger {
-    margin-top: 2rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .recover-form .btn-less-opacity,
-  .subscribe-form .btn-danger {
-    margin-top: 0;
-  }
-}
-
-.btn-large {
-  margin-top: 1.5rem;
-  width: 100%;
-}
-
-.btn-small {
-  height: 4rem;
-  width: 14rem;
-}
-
-.btn-font-large {
-  font-size: 2.4rem;
-}
-
-.btn-font-small {
-  font-size: 1.8rem;
-}
-
-.btn-less-opacity {
-  background: -webkit-gradient(linear, left top, left bottom, from(#cde4b0), to(#abd182));
-  background: linear-gradient(to bottom, #cde4b0 0%, #abd182 100%);
-  border: solid 1px #90ca6d;
-}
-
-.btn-danger {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f76f7f), to(#f03747));
-  background: linear-gradient(to bottom, #f76f7f 0%, #f03747 100%);
-}
-
 .message-textarea {
   border: solid 1px #c6c6c6;
   border-radius: 0.3rem;
@@ -1254,5 +1161,96 @@ body {
 
 .message-textarea::placeholder {
   color: #afafaf;
+}
+
+.btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#addc54), to(#7ec31f));
+  background: linear-gradient(to bottom, #addc54 0%, #7ec31f 100%);
+  border: solid 1px #3b9a00;
+  border-radius: 0.3rem;
+  color: #f4f4f4;
+  cursor: pointer;
+  font-family: "TitilliumText22L_light";
+  font-weight: 400;
+  height: 4.8rem;
+  text-shadow: 1px 1px 0px rgba(43, 0, 0, 0.75);
+}
+
+.sign-in-form__wrapper .btn {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 480px) {
+  .sign-in-form__wrapper .btn {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sign-in-form__wrapper .btn {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sign-in-form__wrapper .btn {
+    margin-top: 0;
+  }
+}
+
+.recover-form .btn--less-opacity,
+.subscribe-form .btn--danger {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 480px) {
+  .recover-form .btn--less-opacity,
+  .subscribe-form .btn--danger {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .recover-form .btn--less-opacity,
+  .subscribe-form .btn--danger {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .recover-form .btn--less-opacity,
+  .subscribe-form .btn--danger {
+    margin-top: 0;
+  }
+}
+
+.btn--large {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.btn--small {
+  height: 4rem;
+  width: 14rem;
+}
+
+.btn--font-large {
+  font-size: 2.4rem;
+}
+
+.btn--font-small {
+  font-size: 1.8rem;
+}
+
+.btn--less-opacity {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cde4b0), to(#abd182));
+  background: linear-gradient(to bottom, #cde4b0 0%, #abd182 100%);
+  border: solid 1px #90ca6d;
+}
+
+.btn--danger {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f76f7f), to(#f03747));
+  background: linear-gradient(to bottom, #f76f7f 0%, #f03747 100%);
+  border: solid 1px #a2202a;
 }
 /*# sourceMappingURL=main.css.map */

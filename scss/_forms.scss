@@ -156,7 +156,7 @@
 	}
 
 	&__wrapper {
-		align-items: center;
+		// align-items: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -278,82 +278,6 @@
 // .subscribe-form .form-box {
 // 	padding: 3em 2em 2em;
 // }
-
-.btn {
-	background: linear-gradient(to bottom, $green-light 0%, $green 100%);
-	border: solid 1px $green-dark;
-	border-radius: 0.3rem;
-	color: $white;
-	cursor: pointer;
-	font-family: $main-font;
-	font-weight: $font-normal-weight;
-	height: 4.8rem;
-	text-shadow: 1px 1px 0px rgba(43, 0, 0, 0.75);
-}
-
-.sign-in-form .btn {
-	margin-top: 3rem;
-
-	@include mediaQueriesMin(480px) {
-		margin-top: 0;
-	}
-
-	@include mediaQueriesMin(768px) {
-		margin-top: 3rem;
-	}
-
-	@include mediaQueriesMin(992px) {
-		margin-top: 0;
-	}
-}
-
-.recover-form .btn-less-opacity,
-.subscribe-form .btn-danger {
-	margin-top: 2rem;
-
-	@include mediaQueriesMin(480px) {
-		margin-top: 0;
-	}
-
-	@include mediaQueriesMin(768px) {
-		margin-top: 2rem;
-	}
-
-	@include mediaQueriesMin(992px) {
-		margin-top: 0;
-	}
-}
-
-.btn-large {
-	margin-top: 1.5rem;
-	width: 100%;
-}
-
-.btn-small {
-	height: 4rem;
-	width: $btn-small-width;
-}
-
-.btn-font-large {
-	font-size: $font-size_btn-large;
-}
-
-.btn-font-small {
-	font-size: $font-size_btn-small;
-}
-
-.btn-less-opacity {
-	background: linear-gradient(
-		to bottom,
-		$green-light-less-opacity 0%,
-		$green-less-opacity 100%
-	);
-	border: solid 1px $green-dark-less-opacity;
-}
-
-.btn-danger {
-	background: linear-gradient(to bottom, $red-light 0%, $red 100%);
-}
 
 .message-textarea {
 	border: solid 1px $gray-input-box;
