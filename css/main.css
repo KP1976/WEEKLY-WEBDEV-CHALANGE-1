@@ -515,9 +515,22 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 448px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 598px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     height: 130rem;
+    padding: 0;
     width: 730px;
   }
 }
@@ -1229,9 +1242,11 @@ body {
   width: 100%;
 }
 
-.btn--small {
-  height: 4rem;
-  width: 14rem;
+@media screen and (min-width: 480px) {
+  .btn--small {
+    height: 4rem;
+    width: 14rem;
+  }
 }
 
 .btn--font-large {

@@ -4,8 +4,17 @@
 	margin: 2.5rem auto 0;
 	width: 100%;
 
+	@include mediaQueriesMin(448px) {
+		padding: 0 2rem;
+	}
+
+	@include mediaQueriesMin(598px) {
+		padding: 0 4rem;
+	}
+
 	@include mediaQueriesMin(768px) {
 		height: 130rem;
+		padding: 0;
 		width: 730px;
 	}
 

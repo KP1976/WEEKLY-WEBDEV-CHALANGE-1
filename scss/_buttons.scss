@@ -49,8 +49,10 @@
 }
 
 .btn--small {
-	height: 4rem;
-	width: $btn-small-width;
+	@include mediaQueriesMin(480px) {
+		height: 4rem;
+		width: $btn-small-width;
+	}
 }
 
 .btn--font-large {
