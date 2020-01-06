@@ -281,6 +281,11 @@
 	@include mediaQueriesMin(768px) {
 		grid-row: 4 / 10;
 	}
+
+	@include mediaQueriesMin(992px) {
+		grid-row: 4 / 10;
+		margin-top: -6rem;
+	}
 }
 
 .register-form,
@@ -308,10 +313,16 @@
 	@include mediaQueriesMin(768px) {
 		grid-row: 3 / 6;
 	}
+
+	@include mediaQueriesMin(992px) {
+		grid-row: 2 / 6;
+		margin-top: -2rem;
+	}
 }
 
 .subscribe-form {
 	@include mediaQueriesMin(768px) {
-		grid-row: 7 / 8;
+		grid-row: 6 / 8;
+		margin-top: -2rem;
 	}
 }

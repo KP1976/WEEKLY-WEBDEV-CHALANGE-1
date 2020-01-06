@@ -1222,6 +1222,15 @@ body {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .email-form {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 6;
+    grid-row: 4 / 10;
+    margin-top: -6rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .register-form,
   .email-form {
@@ -1255,11 +1264,21 @@ body {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .recover-form {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
+    grid-row: 2 / 6;
+    margin-top: -2rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .subscribe-form {
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 1;
-    grid-row: 7 / 8;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 2;
+    grid-row: 6 / 8;
+    margin-top: -2rem;
   }
 }
 
