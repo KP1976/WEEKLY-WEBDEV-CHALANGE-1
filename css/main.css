@@ -510,7 +510,6 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  row-gap: 4rem;
   margin: 2.5rem auto 0;
   width: 100%;
 }
@@ -529,9 +528,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    height: 130rem;
-    padding: 0;
-    width: 730px;
+    justify-items: center;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto 2rem auto 2rem 4rem 2rem auto 4rem auto;
+        grid-template-rows: auto 2rem auto 2rem 4rem 2rem auto 4rem auto;
+    padding: 0 1rem;
+    width: 100%;
   }
 }
 
@@ -553,13 +556,18 @@ body {
 .logo2 {
   display: block;
   margin: 0 auto;
-  padding: 6rem 0 0;
   max-width: 100%;
   width: 353px;
 }
 
 @media screen and (min-width: 768px) {
   .logo2 {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 8;
+    -ms-grid-row-span: 2;
+    grid-row: 8 / 10;
+    margin-top: -6rem;
     width: 250px;
   }
 }
@@ -581,6 +589,7 @@ body {
 .sign-in-form,
 .recover-form,
 .subscribe-form {
+  margin-bottom: 2rem;
   width: 100%;
 }
 
@@ -971,10 +980,9 @@ body {
   .sign-in-form__wrapper,
   .recover-form__wrapper,
   .subscribe-form__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1115,6 +1123,7 @@ body {
   .recover-form__checkbox-description,
   .subscribe-form__checkbox-description {
     font-size: 1.3rem;
+    margin-top: 0.1em;
   }
 }
 
@@ -1182,7 +1191,8 @@ body {
   .sign-in-form,
   .recover-form,
   .subscribe-form {
-    width: 32rem;
+    margin-bottom: 0;
+    width: 35rem;
   }
 }
 
@@ -1193,6 +1203,63 @@ body {
   .recover-form,
   .subscribe-form {
     width: 42rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register-form {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / 4;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .email-form {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 6;
+    grid-row: 4 / 10;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .register-form,
+  .email-form {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sign-in-form,
+  .recover-form,
+  .subscribe-form {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sign-in-form {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .recover-form {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    grid-row: 3 / 6;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7 / 8;
   }
 }
 
@@ -1219,12 +1286,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .sign-in-form__wrapper .btn {
-    margin-top: 3rem;
-  }
-}
-
 @media screen and (min-width: 992px) {
   .sign-in-form__wrapper .btn {
     margin-top: 0;
@@ -1240,13 +1301,6 @@ body {
   .recover-form .btn--less-opacity,
   .subscribe-form .btn--danger {
     margin-top: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .recover-form .btn--less-opacity,
-  .subscribe-form .btn--danger {
-    margin-top: 2rem;
   }
 }
 
@@ -1266,6 +1320,13 @@ body {
   .btn--small {
     height: 4rem;
     width: 14rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn--small {
+    height: 4rem;
+    width: 12rem;
   }
 }
 

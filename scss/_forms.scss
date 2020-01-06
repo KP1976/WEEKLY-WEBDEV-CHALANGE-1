@@ -9,6 +9,7 @@
 .sign-in-form,
 .recover-form,
 .subscribe-form {
+	margin-bottom: 2rem;
 	width: 100%;
 
 	&__title {
@@ -156,7 +157,6 @@
 	}
 
 	&__wrapper {
-		// align-items: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -166,7 +166,8 @@
 		}
 
 		@include mediaQueriesMin(768px) {
-			flex-direction: column;
+			align-items: center;
+			// flex-direction: column;
 		}
 
 		@include mediaQueriesMin(992px) {
@@ -236,6 +237,7 @@
 
 		@include mediaQueriesMin(768px) {
 			font-size: $font-size-checkbox-small;
+			margin-top: 0.1em;
 		}
 
 		@include mediaQueriesMin(992px) {
@@ -260,6 +262,7 @@
 	}
 
 	@include mediaQueriesMin(768px) {
+		margin-bottom: 0;
 		width: $form-width-small;
 	}
 
@@ -268,29 +271,47 @@
 	}
 }
 
-// .register-form,
-// .email-form,
-// .sign-in-form,
-// .recover-form {
-// 	margin-bottom: 4rem;
-// }
+.register-form {
+	@include mediaQueriesMin(768px) {
+		grid-row: 1 / 4;
+	}
+}
 
-// .register-form,
-// .email-form {
-// 	margin-right: 8rem;
-// }
+.email-form {
+	@include mediaQueriesMin(768px) {
+		grid-row: 4 / 10;
+	}
+}
 
-// .sign-in-form {
-// 	@include mediaQueriesMin(768px) {
-// 		margin-bottom: 2rem;
-// 	}
-// }
+.register-form,
+.email-form {
+	@include mediaQueriesMin(768px) {
+		grid-column: 1;
+	}
+}
 
-// .sign-in-form .form-box,
-// .recover-form .form-box {
-// 	padding: 3em 2em;
-// }
+.sign-in-form,
+.recover-form,
+.subscribe-form {
+	@include mediaQueriesMin(768px) {
+		grid-column: 2;
+	}
+}
 
-// .subscribe-form .form-box {
-// 	padding: 3em 2em 2em;
-// }
+.sign-in-form {
+	@include mediaQueriesMin(768px) {
+		grid-row: 1 / 2;
+	}
+}
+
+.recover-form {
+	@include mediaQueriesMin(768px) {
+		grid-row: 3 / 6;
+	}
+}
+
+.subscribe-form {
+	@include mediaQueriesMin(768px) {
+		grid-row: 7 / 8;
+	}
+}

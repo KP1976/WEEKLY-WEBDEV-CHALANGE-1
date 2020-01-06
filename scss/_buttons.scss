@@ -18,7 +18,7 @@
 	}
 
 	@include mediaQueriesMin(768px) {
-		margin-top: 3rem;
+		// margin-top: 3rem;
 	}
 
 	@include mediaQueriesMin(992px) {
@@ -35,7 +35,7 @@
 	}
 
 	@include mediaQueriesMin(768px) {
-		margin-top: 2rem;
+		// margin-top: 2rem;
 	}
 
 	@include mediaQueriesMin(992px) {
@@ -52,6 +52,11 @@
 	@include mediaQueriesMin(480px) {
 		height: 4rem;
 		width: $btn-small-width;
+	}
+
+	@include mediaQueriesMin(768px) {
+		height: 4rem;
+		width: 12rem;
 	}
 }
 

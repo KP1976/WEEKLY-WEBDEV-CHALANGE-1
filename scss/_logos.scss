@@ -11,11 +11,14 @@
 	display: block;
 	margin: 0 auto;
 	// mix-blend-mode: soft-light;
-	padding: 6rem 0 0;
+	// padding: 6rem 0 0;
 	max-width: 100%;
 	width: 353px;
 
 	@include mediaQueriesMin(768px) {
+		grid-column: 2;
+		grid-row: 8 / 10;
+		margin-top: -6rem;
 		width: 250px;
 	}
 
