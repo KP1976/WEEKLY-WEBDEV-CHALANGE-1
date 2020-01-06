@@ -1128,6 +1128,54 @@ body {
   }
 }
 
+.register-form__message-textarea,
+.email-form__message-textarea,
+.sign-in-form__message-textarea,
+.recover-form__message-textarea,
+.subscribe-form__message-textarea {
+  border: solid 1px #c6c6c6;
+  border-radius: 0.3rem;
+  font-family: "TitilliumText22L_light";
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  outline-color: #addc54;
+  padding: 1rem 1.5rem;
+  resize: vertical;
+  width: 100%;
+}
+
+.register-form__message-textarea::-webkit-input-placeholder,
+.email-form__message-textarea::-webkit-input-placeholder,
+.sign-in-form__message-textarea::-webkit-input-placeholder,
+.recover-form__message-textarea::-webkit-input-placeholder,
+.subscribe-form__message-textarea::-webkit-input-placeholder {
+  color: #afafaf;
+}
+
+.register-form__message-textarea:-ms-input-placeholder,
+.email-form__message-textarea:-ms-input-placeholder,
+.sign-in-form__message-textarea:-ms-input-placeholder,
+.recover-form__message-textarea:-ms-input-placeholder,
+.subscribe-form__message-textarea:-ms-input-placeholder {
+  color: #afafaf;
+}
+
+.register-form__message-textarea::-ms-input-placeholder,
+.email-form__message-textarea::-ms-input-placeholder,
+.sign-in-form__message-textarea::-ms-input-placeholder,
+.recover-form__message-textarea::-ms-input-placeholder,
+.subscribe-form__message-textarea::-ms-input-placeholder {
+  color: #afafaf;
+}
+
+.register-form__message-textarea::placeholder,
+.email-form__message-textarea::placeholder,
+.sign-in-form__message-textarea::placeholder,
+.recover-form__message-textarea::placeholder,
+.subscribe-form__message-textarea::placeholder {
+  color: #afafaf;
+}
+
 @media screen and (min-width: 768px) {
   .register-form,
   .email-form,
@@ -1146,34 +1194,6 @@ body {
   .subscribe-form {
     width: 42rem;
   }
-}
-
-.message-textarea {
-  border: solid 1px #c6c6c6;
-  border-radius: 0.3rem;
-  font-family: "TitilliumText22L_light";
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
-  outline-color: #addc54;
-  padding: 1rem 1.5rem;
-  resize: vertical;
-  width: 100%;
-}
-
-.message-textarea::-webkit-input-placeholder {
-  color: #afafaf;
-}
-
-.message-textarea:-ms-input-placeholder {
-  color: #afafaf;
-}
-
-.message-textarea::-ms-input-placeholder {
-  color: #afafaf;
-}
-
-.message-textarea::placeholder {
-  color: #afafaf;
 }
 
 .btn {

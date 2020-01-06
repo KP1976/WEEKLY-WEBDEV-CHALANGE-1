@@ -243,6 +243,22 @@
 		}
 	}
 
+	&__message-textarea {
+		border: solid 1px $gray-input-box;
+		border-radius: 0.3rem;
+		font-family: $main-font;
+		font-size: $font-size-base;
+		margin-bottom: 2rem;
+		outline-color: $green-light;
+		padding: 1rem 1.5rem;
+		resize: vertical;
+		width: 100%;
+
+		&::placeholder {
+			color: $gray;
+		}
+	}
+
 	@include mediaQueriesMin(768px) {
 		width: $form-width-small;
 	}
@@ -278,19 +294,3 @@
 // .subscribe-form .form-box {
 // 	padding: 3em 2em 2em;
 // }
-
-.message-textarea {
-	border: solid 1px $gray-input-box;
-	border-radius: 0.3rem;
-	font-family: $main-font;
-	font-size: $font-size-base;
-	margin-bottom: 2rem;
-	outline-color: $green-light;
-	padding: 1rem 1.5rem;
-	resize: vertical;
-	width: 100%;
-}
-
-.message-textarea::placeholder {
-	color: $gray;
-}
