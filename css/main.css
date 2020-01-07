@@ -362,7 +362,7 @@ body {
 .sign-in-form__input::-webkit-input-placeholder,
 .recover-form__input::-webkit-input-placeholder,
 .subscribe-form__input::-webkit-input-placeholder {
-  color: #afafaf;
+  color: #707070;
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
 }
@@ -372,7 +372,7 @@ body {
 .sign-in-form__input:-ms-input-placeholder,
 .recover-form__input:-ms-input-placeholder,
 .subscribe-form__input:-ms-input-placeholder {
-  color: #afafaf;
+  color: #707070;
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
 }
@@ -382,7 +382,7 @@ body {
 .sign-in-form__input::-ms-input-placeholder,
 .recover-form__input::-ms-input-placeholder,
 .subscribe-form__input::-ms-input-placeholder {
-  color: #afafaf;
+  color: #707070;
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
 }
@@ -392,7 +392,7 @@ body {
 .sign-in-form__input::placeholder,
 .recover-form__input::placeholder,
 .subscribe-form__input::placeholder {
-  color: #afafaf;
+  color: #707070;
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
 }
@@ -526,7 +526,7 @@ body {
 .recover-form__select-location,
 .subscribe-form__select-location {
   border: none;
-  color: #afafaf;
+  color: #707070;
   font-family: "TitilliumText22L_light";
   font-size: 1.2rem;
   outline-color: #addc54;
@@ -731,7 +731,7 @@ body {
 .sign-in-form__checkbox-description,
 .recover-form__checkbox-description,
 .subscribe-form__checkbox-description {
-  color: #afafaf;
+  color: #707070;
   font-family: "TitilliumText22L_light";
   font-size: 1.3rem;
 }
@@ -788,7 +788,7 @@ body {
 .sign-in-form__message-textarea::-webkit-input-placeholder,
 .recover-form__message-textarea::-webkit-input-placeholder,
 .subscribe-form__message-textarea::-webkit-input-placeholder {
-  color: #afafaf;
+  color: #707070;
 }
 
 .register-form__message-textarea:-ms-input-placeholder,
@@ -796,7 +796,7 @@ body {
 .sign-in-form__message-textarea:-ms-input-placeholder,
 .recover-form__message-textarea:-ms-input-placeholder,
 .subscribe-form__message-textarea:-ms-input-placeholder {
-  color: #afafaf;
+  color: #707070;
 }
 
 .register-form__message-textarea::-ms-input-placeholder,
@@ -804,7 +804,7 @@ body {
 .sign-in-form__message-textarea::-ms-input-placeholder,
 .recover-form__message-textarea::-ms-input-placeholder,
 .subscribe-form__message-textarea::-ms-input-placeholder {
-  color: #afafaf;
+  color: #707070;
 }
 
 .register-form__message-textarea::placeholder,
@@ -812,7 +812,7 @@ body {
 .sign-in-form__message-textarea::placeholder,
 .recover-form__message-textarea::placeholder,
 .subscribe-form__message-textarea::placeholder {
-  color: #afafaf;
+  color: #707070;
 }
 
 @media screen and (min-width: 768px) {
