@@ -86,11 +86,13 @@ textarea {
 @font-face {
   font-family: "TitilliumText22L_light";
   src: url("../fonts/TitilliumText22L_light.otf") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "TitilliumText22L_medium";
   src: url("../fonts/TitilliumText22L_medium.otf") format("opentype");
+  font-display: swap;
 }
 
 @-webkit-keyframes simple-anim {
